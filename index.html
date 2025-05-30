@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Kumar - Environmental Science Researcher | Climate & Sustainability</title>
+    <meta name="description" content="Environmental Science PhD researcher specializing in climate change impacts, ecosystem restoration, and sustainable environmental solutions. Explore cutting-edge research and collaborations.">
+    <meta property="og:title" content="Rahul Kumar - Environmental Science Researcher">
+    <meta property="og:description" content="PhD researcher in Environmental Science focusing on climate change impacts and ecosystem restoration.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Rahul Kumar</h1>
+                        <p>Environmental Science</p>
+                    </div>
+                </div>
+                
+                <nav class="desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#research" class="nav-link">Research</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#awards" class="nav-link">Awards</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav class="mobile-nav" id="mobileNav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#research" class="mobile-nav-link">Research</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#awards" class="mobile-nav-link">Awards</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        
+        <!-- Revolving Earth Background -->
+        <div class="earth-container">
+            <div class="earth-rotation">
+                <svg class="earth-svg" viewBox="0 0 400 400">
+                    <defs>
+                        <radialGradient id="earthGradient" cx="0.3" cy="0.3">
+                            <stop offset="0%" stop-color="#4ade80" />
+                            <stop offset="50%" stop-color="#22c55e" />
+                            <stop offset="100%" stop-color="#15803d" />
+                        </radialGradient>
+                        <radialGradient id="oceanGradient" cx="0.3" cy="0.3">
+                            <stop offset="0%" stop-color="#0ea5e9" />
+                            <stop offset="50%" stop-color="#0284c7" />
+                            <stop offset="100%" stop-color="#075985" />
+                        </radialGradient>
+                    </defs>
+                    
+                    <!-- Earth sphere -->
+                    <circle cx="200" cy="200" r="180" fill="url(#oceanGradient)" />
+                    
+                    <!-- Continents -->
+                    <path d="M80 150 Q120 140 160 150 Q200 160 240 150 Q280 140 320 150 L320 180 Q280 170 240 180 Q200 190 160 180 Q120 170 80 180 Z" fill="url(#earthGradient)" />
+                    <path d="M100 220 Q140 210 180 220 Q220 230 260 220 L260 250 Q220 260 180 250 Q140 240 100 250 Z" fill="url(#earthGradient)" />
+                    <path d="M120 280 Q160 270 200 280 Q240 290 280 280 L280 300 Q240 310 200 300 Q160 290 120 300 Z" fill="url(#earthGradient)" />
+                    
+                    <!-- Climate indicators -->
+                    <circle cx="150" cy="120" r="8" fill="#ef4444" opacity="0.7">
+                        <animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="280" cy="140" r="6" fill="#f97316" opacity="0.7">
+                        <animate attributeName="r" values="4;8;4" dur="2.5s" repeatCount="indefinite" />
+                    </circle>
+                    
+                    <!-- Weather patterns -->
+                    <circle cx="200" cy="100" r="12" fill="none" stroke="#94a3b8" stroke-width="2" opacity="0.6">
+                        <animate attributeName="r" values="8;16;8" dur="4s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="250" cy="180" r="10" fill="none" stroke="#64748b" stroke-width="1.5" opacity="0.6">
+                        <animate attributeName="r" values="6;14;6" dur="3.5s" repeatCount="indefinite" />
+                    </circle>
+                    
+                    <!-- Forest indicators -->
+                    <rect x="130" y="160" width="4" height="8" fill="#16a34a" opacity="0.8">
+                        <animateTransform attributeName="transform" type="scale" values="1;1.2;1" dur="2s" repeatCount="indefinite" />
+                    </rect>
+                    <rect x="180" y="240" width="3" height="6" fill="#15803d" opacity="0.8">
+                        <animateTransform attributeName="transform" type="scale" values="1;1.3;1" dur="2.2s" repeatCount="indefinite" />
+                    </rect>
+                    
+                    <!-- Atmosphere glow -->
+                    <circle cx="200" cy="200" r="190" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.3">
+                        <animate attributeName="opacity" values="0.2;0.5;0.2" dur="5s" repeatCount="indefinite" />
+                    </circle>
+                    
+                    <!-- Environmental data points -->
+                    <circle cx="100" cy="180" r="2" fill="#10b981" opacity="0.7">
+                        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="300" cy="220" r="2" fill="#059669" opacity="0.7">
+                        <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Floating elements -->
+        <div class="floating-element floating-1">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+        </div>
+        <div class="floating-element floating-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/>
+                <path d="M9.6 4.6A2 2 0 1 1 11 8H2"/>
+                <path d="M12.6 19.4A2 2 0 1 0 14 16H2"/>
+            </svg>
+        </div>
+        <div class="floating-element floating-3">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Rahul Kumar</span>
+                </h1>
+                <p class="hero-subtitle">Environmental Science PhD Researcher</p>
+                <p class="hero-description">
+                    Exploring the intersection of climate science, ecosystem restoration, and sustainable solutions for our planet's future
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Explore My Research</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m6 9 6 6 6-6"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Wave transition -->
+        <div class="wave-transition">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">About Me</h2>
+                <p class="section-subtitle">
+                    Passionate researcher dedicated to understanding and addressing our planet's environmental challenges
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-placeholder">
+                        <svg width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <h3>Research Journey</h3>
+                    <p>
+                        Currently pursuing my PhD in Environmental Science with a focus on climate change impacts on terrestrial ecosystems. 
+                        My research combines field studies, remote sensing data, and predictive modeling to understand how environmental 
+                        changes affect biodiversity and ecosystem services.
+                    </p>
+                    <p>
+                        Adaptable researcher skilled in handling high demands and multitasking. Leveraging expertise in
+                        atmospheric sciences, climate change, remote sensing and GIS. I specialize in using R and Python for
+                        analyzing climatic data, with a focus on water security and climate change through CMIP6 models,
+                        meteorological information, and remote sensing. My background in remote sensing allows me to interpret
+                        geospatial data, applying these skills to process large datasets and model climate-related factors to support
+                        sustainable decision-making.
+                    </p>
+
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            <span>Indian Institute of Technology (ISM), Dhanbad</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            <span>PhD Expected 2026</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5"/>
+                            </svg>
+                            <span>Ph.D. in Environmental Science and Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="research-interests">
+                        <h4>Research Interests</h4>
+                        <div class="tags">
+                            <span class="tag">Climate Change</span>
+                            <span class="tag">Ecosystem Restoration</span>
+                            <span class="tag">Biodiversity Conservation</span>
+                            <span class="tag">Remote Sensing</span>
+                            <span class="tag">Carbon Cycling</span>
+                            <span class="tag">Sustainability</span>
+                            <span class="tag">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Research Focus</h2>
+                <p class="section-subtitle">
+                    Current research projects exploring the complex relationships between climate change, 
+                    ecosystem health, and sustainable environmental management
+                </p>
+            </div>
+
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20"/>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <div class="card-title-area">
+                            <h3>Climate Impact Assessment</h3>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                    </div>
+                    <p>
+                        Developing predictive models to assess the long-term impacts of temperature and precipitation changes on regional biodiversity.
+                    </p>
+                    <div class="methods">
+                        <h4>Key Methods:</h4>
+                        <div class="method-tags">
+                            <span class="method-tag">Statistical Modeling</span>
+                            <span class="method-tag">Machine Learning</span>
+                            <span class="method-tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/>
+                            </svg>
+                        </div>
+                        <div class="card-title-area">
+                            <h3>Remote Sensing & GIS Applications</h3>
+                            <span class="status-badge ongoing">Ongoing</span>
+                        </div>
+                    </div>
+                    <p>
+                        Leveraging geospatial technologies to monitor and analyze environmental changes.
+                    </p>
+                </div>
+
+                <div class="research-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/>
+                            </svg>
+                        </div>
+                        <div class="card-title-area">
+                            <h3>Climate Data Analysis and Visualization</h3>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                    </div>
+                    <p>
+                        Developing innovative methods to interpret and visualize complex climate datasets.
+                    </p>
+                </div>
+
+                <div class="research-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 12a8 8 0 0 1 8-8V2.5"/>
+                                <path d="M12 2.5a8 8 0 1 1 5.657 2.343"/>
+                                <path d="M12 6L9 9l3 3 4-4"/>
+                            </svg>
+                        </div>
+                        <div class="card-title-area">
+                            <h3>Forest Ecosystem Dynamics</h3>
+                            <span class="status-badge planning">Planning</span>
+                        </div>
+                    </div>
+                    <p>
+                        Investigating how climate change affects forest composition, structure, and carbon storage capacity in temperate and boreal ecosystems.
+                    </p>
+                    <div class="methods">
+                        <h4>Key Methods:</h4>
+                        <div class="method-tags">
+                            <span class="method-tag">Field Surveys</span>
+                            <span class="method-tag">Remote Sensing</span>
+                            <span class="method-tag">GIS Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Current Projects</h2>
+                <p class="section-subtitle">
+                    Ongoing research initiatives addressing critical environmental challenges through 
+                    interdisciplinary collaboration and innovative methodologies
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>PhD Research</h3>
+                        <div class="project-status">
+                            <div class="impact-indicator high-impact"></div>
+                            <span class="status-badge ongoing">Ongoing</span>
+                        </div>
+                    </div>
+                    <p>Focused on global water security and climate change.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Minor Project</h3>
+                        <div class="project-status">
+                            <div class="impact-indicator medium-impact"></div>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    <p>Pesticide Usage and its Impact on Farmers – A case study of Mundoti Village (Ajmer), Rajasthan.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>M.Sc. Thesis</h3>
+                        <div class="project-status">
+                            <div class="impact-indicator medium-impact"></div>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    <p>Impact of Lockdown on Air Quality and Associated Health Issues – A case study of Patna City, Bihar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Skills & Expertise</h2>
+                <p class="section-subtitle">
+                    Technical proficiencies and methodological expertise developed through 
+                    years of research and academic training
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 18a4 4 0 0 0-8 0"/>
+                                <circle cx="12" cy="11" r="1"/>
+                                <path d="M14 2v6h-4V2"/>
+                            </svg>
+                        </div>
+                        <h3>Programming & Analysis</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>R Statistical Computing</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MATLAB</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                <line x1="12" x2="12" y1="22.08" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3>Data & Software</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>ArcGIS</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>QGIS</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Google Earth Engine</span>
+                                <span>82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Statistical Modeling</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3v18h18"/>
+                                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                            </svg>
+                        </div>
+                        <h3>Research Methods</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Hydro Climatology</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Climate Science</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Field Sampling</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Experimental Design</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2v3a1 1 0 0 0 1 1h3"/>
+                                <path d="M5 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9l-5-7H5z"/>
+                                <line x1="9" x2="15" y1="15" y2="15"/>
+                            </svg>
+                        </div>
+                        <h3>Other Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MS Office</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MS Excel</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Data Visualization</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AI/ML</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="additional-skills">
+                <div class="cert-lang-grid">
+                    <div class="cert-card">
+                        <div class="card-header-simple">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            <h3>Certifications</h3>
+                        </div>
+                        <ul class="cert-list">
+                            <li>NGP-DST Summer School on Geospatial Technologies:<br>Indian Institute of Technology (ISM), Dhanbad<br>June 2024</li>
+                            <li>Green Skill Development Programme:<br>Greenbelt Development for Industries (Level 5, NSQF)</li>
+                            <li>Ministry of Environment, Forest and Climate Change (MoEFCC)<br>April 2022</li>
+                        </ul>
+                    </div>
+
+                    <div class="lang-card">
+                        <div class="card-header-simple">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                            </svg>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="lang-list">
+                            <div class="lang-item">
+                                <span>Hindi</span>
+                                <span class="lang-level native">Native</span>
+                            </div>
+                            <div class="lang-item">
+                                <span>English</span>
+                                <span class="lang-level native">Fluent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Awards & Recognition</h2>
+                <p class="section-subtitle">
+                    Academic achievements and professional recognition highlighting excellence in 
+                    environmental science research and leadership
+                </p>
+            </div>
+
+            <div class="awards-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="award-item">
+                    <div class="timeline-dot"></div>
+                    <div class="award-year">
+                        <span class="year-badge">2024</span>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                                <path d="M4 22h16"/>
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+                            </svg>
+                        </div>
+                        <div class="award-details">
+                            <div class="award-header">
+                                <h3>Outstanding Graduate Research Award</h3>
+                                <span class="award-type excellence">Academic Excellence</span>
+                            </div>
+                            <p class="award-org">Stanford University</p>
+                            <p class="award-desc">Recognized for exceptional contributions to environmental science research and academic achievement.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-item">
+                    <div class="timeline-dot"></div>
+                    <div class="award-year">
+                        <span class="year-badge">2023</span>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            </svg>
+                        </div>
+                        <div class="award-details">
+                            <div class="award-header">
+                                <h3>NSF Graduate Research Fellowship</h3>
+                                <span class="award-type grant">Research Grant</span>
+                            </div>
+                            <p class="award-org">National Science Foundation</p>
+                            <p class="award-desc">Competitive fellowship supporting doctoral research in environmental science and climate studies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-item">
+                    <div class="timeline-dot"></div>
+                    <div class="award-year">
+                        <span class="year-badge">2023</span>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                        <div class="award-details">
+                            <div class="award-header">
+                                <h3>Best Student Presentation</h3>
+                                <span class="award-type conference">Conference Award</span>
+                            </div>
+                            <p class="award-org">American Geophysical Union</p>
+                            <p class="award-desc">Outstanding presentation on climate change impacts in forest ecosystems at AGU Fall Meeting.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-item">
+                    <div class="timeline-dot"></div>
+                    <div class="award-year">
+                        <span class="year-badge">2022</span>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                                <path d="M4 22h16"/>
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+                            </svg>
+                        </div>
+                        <div class="award-details">
+                            <div class="award-header">
+                                <h3>Environmental Leadership Award</h3>
+                                <span class="award-type leadership">Leadership</span>
+                            </div>
+                            <p class="award-org">UC Berkeley</p>
+                            <p class="award-desc">Recognized for leadership in environmental advocacy and community engagement initiatives.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-item">
+                    <div class="timeline-dot"></div>
+                    <div class="award-year">
+                        <span class="year-badge">2022</span>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                            </svg>
+                        </div>
+                        <div class="award-details">
+                            <div class="award-header">
+                                <h3>Sigma Xi Research Honor Society</h3>
+                                <span class="award-type honor">Honor Society</span>
+                            </div>
+                            <p class="award-org">Sigma Xi</p>
+                            <p class="award-desc">Inducted into prestigious honor society for scientific research excellence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-item">
+                    <div class="timeline-dot"></div>
+                    <div class="award-year">
+                        <span class="year-badge">2021</span>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                        <div class="award-details">
+                            <div class="award-header">
+                                <h3>Dean's List</h3>
+                                <span class="award-type academic">Academic Honor</span>
+                            </div>
+                            <p class="award-org">UC Berkeley</p>
+                            <p class="award-desc">Consistent academic excellence throughout graduate studies program.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="awards-summary">
+                <div class="summary-card">
+                    <div class="summary-number">6</div>
+                    <div class="summary-label">Major Awards</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-number">$75K</div>
+                    <div class="summary-label">Grant Funding</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-number">3</div>
+                    <div class="summary-label">Leadership Roles</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-number">5</div>
+                    <div class="summary-label">Honor Societies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Interested in collaboration, research opportunities, or simply want to discuss 
+                    environmental science? I'd love to hear from you.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-list">
+                            <a href="tel:+919636525194" class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Mobile</div>
+                                    <div class="contact-value">+91 96365 25194</div>
+                                </div>
+                            </a>
+
+                            <a href="mailto:rahulevs01@gmail.com" class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">rahulevs01@gmail.com</div>
+                                </div>
+                            </a>
+
+                            <a href="https://maps.google.com/?q=Bihar,+India,+811311" target="_blank" class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Location</div>
+                                    <div class="contact-value">Bihar, India, 811311</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+                        <h3>Quick Actions</h3>
+                        <div class="action-buttons">
+                            <a href="mailto:sarah.chen@stanford.edu?subject=Research Collaboration Inquiry" class="action-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Email for Collaboration
+                            </a>
+                            <a href="#" class="action-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2v3a1 1 0 0 0 1 1h3"/>
+                                    <path d="M5 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9l-5-7H5z"/>
+                                    <line x1="9" x2="15" y1="15" y2="15"/>
+                                </svg>
+                                Download CV
+                            </a>
+                            <a href="#" class="action-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                    <line x1="16" x2="16" y1="2" y2="6"/>
+                                    <line x1="8" x2="8" y1="2" y2="6"/>
+                                    <line x1="3" x2="21" y1="10" y2="10"/>
+                                </svg>
+                                Schedule Meeting
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-connect">
+                    <div class="social-card">
+                        <h3>Connect Online</h3>
+                        <div class="social-links">
+                            <a href="https://in.linkedin.com/in/rahul-kumar-61aa2a209" target="_blank" class="social-link linkedin">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                LinkedIn
+                            </a>
+                            <a href="https://github.com/sarahchen-env" target="_blank" class="social-link github">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://twitter.com/sarahchen_env" target="_blank" class="social-link twitter">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                                Twitter
+                            </a>
+                            <a href="https://researchgate.net/profile/sarah-chen" target="_blank" class="social-link researchgate">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.87.936-.87 1.556 0 .608.303 1.185.908 1.723.577.511 1.36.767 2.035.767.744 0 1.402-.255 1.96-.767.558-.511.838-1.133.838-1.856 0-.629-.285-1.16-.854-1.594C20.881.198 20.224 0 19.586 0zM7.568 2.827c-1.54 0-2.98.511-4.32 1.532C1.908 5.38 1.024 6.956.461 8.987c-.563 2.031-.818 4.041-.765 6.031.053 1.99.481 3.727 1.284 5.211.803 1.485 1.99 2.227 3.562 2.227 1.06 0 1.896-.336 2.507-1.008.612-.672.918-1.545.918-2.619 0-.699-.19-1.336-.569-1.911-.38-.575-.918-1.008-1.615-1.299-.697-.291-1.483-.437-2.358-.437-.875 0-1.615.146-2.221.437v-2.649c.034-.699.244-1.336.629-1.911.385-.575.918-1.008 1.598-1.299.681-.291 1.466-.437 2.358-.437.892 0 1.714.164 2.467.491.753.328 1.466.855 2.138 1.58l1.284-1.532c-.857-.988-1.97-1.765-3.338-2.332-1.369-.566-2.826-.85-4.372-.85z"/>
+                                </svg>
+                                ResearchGate
+                            </a>
+                        </div>
+
+                        <div class="research-profiles">
+                            <h4>Research Profiles</h4>
+                            <div class="profile-list">
+                                <div>• ORCID: 0000-0000-0000-0000</div>
+                                <div>• Google Scholar: Sarah Chen</div>
+                                <div>• Scopus Author ID: 123456789</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>© 2025, Rahul Kumar, Ph.D. in Environmental Science and Engineering</p>
+                <p>Dedicated to advancing environmental science for a sustainable future.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
