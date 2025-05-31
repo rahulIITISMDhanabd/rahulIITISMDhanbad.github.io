@@ -233,7 +233,10 @@ a {
 .logo-text h1 {
   font-size: 1.125rem;
   margin: 0;
-  color: green;
+  color: var(--accent-primary); /* Use blue for professional branding */
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .logo-text p {
