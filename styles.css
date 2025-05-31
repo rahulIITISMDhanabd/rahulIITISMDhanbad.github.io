@@ -236,12 +236,6 @@ a:focus, button:focus, .btn:focus {
   border-radius: 1rem; font-size: 0.875rem;
 }
 
-/* ===== Research, Projects, Skills, Awards, Contact, Timeline, etc. ===== */
-/* (All styles below as in your previous file for .research-grid, .skills-grid, .card, .timeline, .award-item, .contact-card, etc.) */
-
-/* ... (All your previous section, grid, card, award, timeline, and responsive styles go here—unchanged from your last CSS, for brevity!) ... */
-
-/* ===== Responsive Design ===== */
 @media (min-width: 640px) {
   .hero-buttons { flex-direction: row; }
   .research-grid, .skills-grid, .cert-lang-grid, .awards-summary, .contact-content { grid-template-columns: repeat(2, 1fr);}
