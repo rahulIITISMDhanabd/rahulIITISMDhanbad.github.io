@@ -310,14 +310,28 @@ a {
 
 /* Updated Hero Section for a PhD Student in Environment and Science */
 .hero {
-  background: linear-gradient(135deg, #e6efff 0%, #f0f6ff 100%);
-  color: var(--text-primary);
+  position: relative;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 5rem 1rem;
+  background: url('science and climate.jpg') no-repeat center center/cover, #e0f2fe; /* fallback color */
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 32, 64, 0.35);
+  z-index: 1;
+}
+
+.hero-content, .hero-text, .floating-element, .earth-container, .scroll-indicator, .wave-transition {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-title {
@@ -1232,6 +1246,100 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-secondary);
+}
+
+/* Horizontal form page styles */
+.form-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #e0f2fe 0%, #b6e0fe 100%);
+}
+
+.form-section {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(0,32,64,0.10);
+    padding: 2.5rem 2rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-section h1.gradient-text {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+    color: #2563eb;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.horizontal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row input,
+.form-row textarea {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: 1px solid #b6e0fe;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    background: #f8fafc;
+    transition: border 0.2s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    border: 1.5px solid #2563eb;
+    outline: none;
+}
+
+.form-row textarea {
+    resize: vertical;
+    min-width: 180px;
+    max-width: 100%;
+}
+
+.btn-blue {
+    background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+    color: #fff;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.8rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+
+.btn-blue:hover {
+    background: linear-gradient(90deg, #1d4ed8 0%, #3b82f6 100%);
+}
+
+@media (max-width: 700px) {
+    .form-section {
+        padding: 1.2rem 0.5rem;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .form-section h1.gradient-text {
+        font-size: 1.3rem;
+    }
 }
 
 /* Responsive Design */
