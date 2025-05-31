@@ -1,4 +1,3 @@
-// script.js – Pro Scholar Portfolio UX (Climate Change/Environment)
 document.addEventListener('DOMContentLoaded', function() {
     // ===== Header scroll shadow effect =====
     const header = document.getElementById('header');
