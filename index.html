@@ -21,10 +21,7 @@
       --gradient-accent: linear-gradient(90deg, #0bb193 0%, #3b82f6 100%);
       --radius: 16px;
     }
-    html {
-      scroll-behavior: smooth;
-      background: var(--bg);
-    }
+    html { scroll-behavior: smooth; background: var(--bg);}
     body {
       margin: 0;
       font-family: 'Inter', Arial, sans-serif;
@@ -38,22 +35,9 @@
       margin-top: 0;
       color: var(--primary-dark);
     }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-    h3 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      margin-bottom: 0.7em;
-    }
+    h1 { font-size: 2.3rem; font-weight: 700; letter-spacing: 1px;}
+    h2 { font-size: 2rem; font-weight: 700; letter-spacing: 1px;}
+    h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 0.7em;}
     .gradient-text {
       background: var(--gradient);
       -webkit-background-clip: text;
@@ -61,11 +45,7 @@
       background-clip: text;
       text-fill-color: transparent;
     }
-    .container {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 0 1.2rem;
-    }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 1.2rem;}
     header {
       background: var(--white);
       border-bottom: 1.5px solid var(--gray-light);
@@ -75,30 +55,11 @@
       top: 0;
       z-index: 10;
     }
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .logo-area {
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-    }
-    .logo-area svg {
-      color: var(--accent);
-      width: 36px;
-      height: 36px;
-    }
-    .logo-area .site-title {
-      font-size: 1.38rem;
-      font-weight: 700;
-      color: var(--primary-dark);
-    }
-    nav {
-      display: flex;
-      gap: 1.2rem;
-    }
+    .header-content { display: flex; align-items: center; justify-content: space-between;}
+    .logo-area { display: flex; align-items: center; gap: 0.7rem;}
+    .logo-area svg { color: var(--accent); width: 36px; height: 36px;}
+    .logo-area .site-title { font-size: 1.38rem; font-weight: 700; color: var(--primary-dark);}
+    nav { display: flex; gap: 1.2rem;}
     nav a {
       text-decoration: none;
       color: var(--primary-dark);
@@ -145,26 +106,10 @@
       flex-direction: column;
       gap: 1rem;
     }
-    .hero-content h1 {
-      color: var(--white);
-      font-size: 2.15rem;
-      margin-bottom: 0.25em;
-    }
-    .hero-content h2 {
-      color: #e0f2fe;
-      font-size: 1.13rem;
-      font-weight: 600;
-      margin-bottom: 0.2em;
-    }
-    .hero-content p {
-      color: #f1f5f9;
-      margin-bottom: 0.5em;
-    }
-    .hero-buttons {
-      display: flex;
-      gap: 1.1rem;
-      margin-top: 0.4em;
-    }
+    .hero-content h1 { color: var(--white); font-size: 2.15rem; margin-bottom: 0.25em;}
+    .hero-content h2 { color: #e0f2fe; font-size: 1.13rem; font-weight: 600; margin-bottom: 0.2em;}
+    .hero-content p { color: #f1f5f9; margin-bottom: 0.5em;}
+    .hero-buttons { display: flex; gap: 1.1rem; margin-top: 0.4em;}
     .btn {
       padding: 0.72em 1.7em;
       font-size: 1rem;
@@ -179,54 +124,16 @@
       text-decoration: none;
       outline: none;
     }
-    .btn-primary {
-      background: var(--primary-dark);
-      color: var(--white);
-    }
-    .btn-primary:hover {
-      background: var(--accent);
-      color: var(--white);
-    }
-    .btn-secondary {
-      background: var(--white);
-      color: var(--primary-dark);
-    }
-    .btn-secondary:hover {
-      background: var(--accent-light);
-      color: var(--primary);
-    }
-    /* Section Basics */
-    section {
-      padding: 3.3rem 0 2.4rem 0;
-      background: var(--bg);
-    }
-    .section-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 0.25em;
-    }
-    .section-subtitle {
-      color: var(--gray);
-      font-size: 1.03rem;
-      margin-bottom: 1.3em;
-    }
-    /* About */
-    .about-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2.3rem;
-      align-items: flex-start;
-    }
-    .about-text {
-      flex: 3 1 380px;
-    }
-    .about-img {
-      flex: 1 1 220px;
-      min-width: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    .btn-primary { background: var(--primary-dark); color: var(--white);}
+    .btn-primary:hover { background: var(--accent); color: var(--white);}
+    .btn-secondary { background: var(--white); color: var(--primary-dark);}
+    .btn-secondary:hover { background: var(--accent-light); color: var(--primary);}
+    section { padding: 3.3rem 0 2.4rem 0; background: var(--bg);}
+    .section-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.25em;}
+    .section-subtitle { color: var(--gray); font-size: 1.03rem; margin-bottom: 1.3em;}
+    .about-section { display: flex; flex-wrap: wrap; gap: 2.3rem; align-items: flex-start;}
+    .about-text { flex: 3 1 380px;}
+    .about-img { flex: 1 1 220px; min-width: 180px; display: flex; align-items: center; justify-content: center;}
     .about-img img {
       border-radius: var(--radius);
       width: 200px;
@@ -234,15 +141,8 @@
       object-fit: cover;
       box-shadow: 0 4px 16px rgba(16,96,169,0.08);
     }
-    ul {
-      padding-left: 1.2em;
-    }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5em;
-      margin-top: 0.4em;
-    }
+    ul { padding-left: 1.2em;}
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 0.4em;}
     .tag {
       background: var(--accent-light);
       color: var(--primary-dark);
@@ -253,13 +153,7 @@
       letter-spacing: 0.02em;
       display: inline-block;
     }
-    /* Skills */
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2.3rem;
-      justify-content: space-between;
-    }
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 2.3rem; justify-content: space-between;}
     .skill-col {
       flex: 1 1 220px;
       background: var(--white);
@@ -269,29 +163,10 @@
       min-width: 200px;
       margin-bottom: 1rem;
     }
-    .skill-title {
-      font-size: 1.13rem;
-      font-weight: 600;
-      margin-bottom: 0.5em;
-      color: var(--primary-dark);
-    }
-    .skill-list {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    .skill-list li {
-      margin-bottom: 0.45em;
-      font-size: 1.02rem;
-      color: var(--header);
-    }
-    /* Projects/Research Cards */
-    .card-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2.2rem;
-      margin-top: 1.3em;
-    }
+    .skill-title { font-size: 1.13rem; font-weight: 600; margin-bottom: 0.5em; color: var(--primary-dark);}
+    .skill-list { list-style: none; padding-left: 0; margin: 0;}
+    .skill-list li { margin-bottom: 0.45em; font-size: 1.02rem; color: var(--header);}
+    .card-grid { display: flex; flex-wrap: wrap; gap: 2.2rem; margin-top: 1.3em;}
     .card {
       background: var(--white);
       border-radius: var(--radius);
@@ -301,15 +176,8 @@
       min-width: 220px;
       transition: transform 0.17s;
     }
-    .card:hover {
-      transform: translateY(-5px) scale(1.04);
-    }
-    .card-title {
-      font-size: 1.14rem;
-      font-weight: 700;
-      color: var(--primary-dark);
-      margin-bottom: 0.25em;
-    }
+    .card:hover { transform: translateY(-5px) scale(1.04);}
+    .card-title { font-size: 1.14rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.25em;}
     .card .status {
       background: var(--accent);
       color: var(--white);
@@ -319,17 +187,13 @@
       margin-left: 0.8em;
       font-weight: 600;
     }
-    /* Awards Timeline */
     .awards-timeline {
       border-left: 3px solid var(--accent-light);
       margin-left: 1.2em;
       padding-left: 2em;
       position: relative;
     }
-    .award-item {
-      margin-bottom: 2.2em;
-      position: relative;
-    }
+    .award-item { margin-bottom: 2.2em; position: relative;}
     .award-item::before {
       content: '';
       position: absolute;
@@ -342,30 +206,10 @@
       border: 2.5px solid var(--white);
       box-shadow: 0 1px 4px rgba(11,177,147,0.17);
     }
-    .award-year {
-      font-size: 1.01em;
-      color: var(--primary);
-      font-weight: 600;
-      margin-bottom: 0.1em;
-    }
-    .award-title {
-      font-weight: 700;
-      font-size: 1.09em;
-      margin-bottom: 0.15em;
-      color: var(--primary-dark);
-    }
-    .award-org {
-      color: var(--gray);
-      font-size: 0.99em;
-    }
-    /* Contact */
-    .contact-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2.4rem;
-      align-items: flex-start;
-      margin-top: 2em;
-    }
+    .award-year { font-size: 1.01em; color: var(--primary); font-weight: 600; margin-bottom: 0.1em;}
+    .award-title { font-weight: 700; font-size: 1.09em; margin-bottom: 0.15em; color: var(--primary-dark);}
+    .award-org { color: var(--gray); font-size: 0.99em;}
+    .contact-section { display: flex; flex-wrap: wrap; gap: 2.4rem; align-items: flex-start; margin-top: 2em;}
     .contact-info {
       flex: 1 1 260px;
       background: var(--white);
@@ -386,19 +230,9 @@
       transition: background 0.13s;
       padding: 0.3em 0.6em 0.3em 0;
     }
-    .contact-info a:hover {
-      background: var(--accent-light);
-    }
-    .contact-info svg {
-      color: var(--accent);
-      min-width: 22px;
-    }
-    .contact-label {
-      font-weight: 600;
-      color: var(--primary);
-      font-size: 1.01em;
-    }
-    /* Contact Form */
+    .contact-info a:hover { background: var(--accent-light);}
+    .contact-info svg { color: var(--accent); min-width: 22px;}
+    .contact-label { font-weight: 600; color: var(--primary); font-size: 1.01em;}
     .contact-form {
       flex: 3 1 320px;
       background: var(--white);
@@ -407,12 +241,7 @@
       padding: 1.3em 1.5em;
       min-width: 260px;
     }
-    .contact-form label {
-      display: block;
-      margin-bottom: 0.2em;
-      color: var(--primary);
-      font-weight: 600;
-    }
+    .contact-form label { display: block; margin-bottom: 0.2em; color: var(--primary); font-weight: 600;}
     .contact-form input, .contact-form textarea {
       width: 100%;
       padding: 0.7em;
@@ -425,14 +254,8 @@
       background: var(--bg);
       transition: border-color 0.17s;
     }
-    .contact-form input:focus, .contact-form textarea:focus {
-      border-color: var(--primary);
-      background: #e0f2fe;
-    }
-    .contact-form textarea {
-      min-height: 90px;
-      resize: vertical;
-    }
+    .contact-form input:focus, .contact-form textarea:focus { border-color: var(--primary); background: #e0f2fe;}
+    .contact-form textarea { min-height: 90px; resize: vertical;}
     .contact-form button {
       background: var(--gradient-accent);
       color: var(--white);
@@ -446,10 +269,7 @@
       transition: background 0.16s, box-shadow 0.14s;
       box-shadow: 0 2px 8px rgba(22,96,169,0.07);
     }
-    .contact-form button:hover {
-      background: var(--gradient);
-    }
-    /* Footer */
+    .contact-form button:hover { background: var(--gradient);}
     footer {
       text-align: center;
       color: var(--gray);
@@ -459,27 +279,14 @@
       padding: 1.3em 0 1em 0;
       margin-top: 1em;
     }
-    /* Responsive */
     @media (max-width: 900px) {
-      .about-section, .skills-grid, .card-grid, .contact-section {
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-      .hero-inner {
-        flex-direction: column;
-        gap: 1.8rem;
-      }
-      .about-img {
-        justify-content: flex-start;
-      }
+      .about-section, .skills-grid, .card-grid, .contact-section { flex-direction: column; gap: 1.5rem;}
+      .hero-inner { flex-direction: column; gap: 1.8rem;}
+      .about-img { justify-content: flex-start;}
     }
     @media (max-width: 540px) {
-      .container {
-        padding: 0 0.4rem;
-      }
-      .hero-img img, .about-img img {
-        width: 100px; height: 120px;
-      }
+      .container { padding: 0 0.4rem;}
+      .hero-img img, .about-img img { width: 100px; height: 120px;}
     }
   </style>
 </head>
@@ -499,8 +306,6 @@
       </nav>
     </div>
   </header>
-
-  <!-- HERO -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-img">
@@ -512,5 +317,139 @@
         <p>Exploring water security, climate change, hydroclimatology, remote sensing, and AI/ML for sustainable solutions.</p>
         <div class="hero-buttons">
           <a href="#research" class="btn btn-primary">View Research</a>
-          <a href="#contact" class="btn
-```
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container about-section">
+      <div class="about-text">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">PhD Research Scholar, IIT (ISM) Dhanbad | Water Security & Climate Change</p>
+        <p>I am a research scholar in the Department of Environmental Science & Engineering at IIT (ISM) Dhanbad. My research focuses on the intersection of water security, climate change, hydroclimatology, and sustainable resource management, leveraging advanced methods such as remote sensing, machine learning, and climate modeling.</p>
+        <div class="tags">
+          <span class="tag">Water Security</span>
+          <span class="tag">Climate Change</span>
+          <span class="tag">Hydrology</span>
+          <span class="tag">Remote Sensing</span>
+          <span class="tag">AI/ML</span>
+          <span class="tag">Python</span>
+          <span class="tag">R</span>
+        </div>
+      </div>
+      <div class="about-img">
+        <img src="about.jpg" alt="About Rahul Kumar" />
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-col">
+          <div class="skill-title">Domain</div>
+          <ul class="skill-list">
+            <li>Hydrology & Hydroclimatology</li>
+            <li>Climate Change Analysis</li>
+            <li>Remote Sensing</li>
+            <li>Environmental Data Analysis</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <div class="skill-title">Technical</div>
+          <ul class="skill-list">
+            <li>Python, R</li>
+            <li>ArcGIS, QGIS</li>
+            <li>Google Earth Engine</li>
+            <li>Machine Learning, SVM, VIC Model</li>
+            <li>Pandas, Matplotlib, Numpy, Scikit-learn</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <div class="skill-title">Other</div>
+          <ul class="skill-list">
+            <li>Research Writing</li>
+            <li>Data Visualization</li>
+            <li>Bayesian Network</li>
+            <li>Bias Correction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="research">
+    <div class="container">
+      <h2 class="section-title">Research & Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">Hydroclimatic Modeling of Indian River Basins <span class="status">Ongoing</span></div>
+          <div>Development and validation of hydroclimatic models for assessing river basin sustainability under changing climate scenarios using remote sensing and AI.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Bias Correction for Climate Models <span class="status">Completed</span></div>
+          <div>Application of statistical and ML techniques for improving accuracy of precipitation and temperature projections for India using CMIP6 and reanalysis datasets.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Water Security Assessment <span class="status">Ongoing</span></div>
+          <div>Integrated assessment of water resources using remote sensing and hydrological models to identify vulnerable regions and inform adaptation strategies.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Remote Sensing for Wetland Monitoring <span class="status">Completed</span></div>
+          <div>Monitoring and classification of wetland ecosystems using multispectral and time-series satellite imagery for policy recommendations.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="awards">
+    <div class="container">
+      <h2 class="section-title">Awards & Recognition</h2>
+      <div class="awards-timeline">
+        <div class="award-item">
+          <div class="award-year">2023</div>
+          <div class="award-title">Best Research Presentation</div>
+          <div class="award-org">IIT (ISM) Dhanbad</div>
+        </div>
+        <div class="award-item">
+          <div class="award-year">2022</div>
+          <div class="award-title">Young Scientist Travel Grant</div>
+          <div class="award-org">DST, Govt. of India</div>
+        </div>
+        <div class="award-item">
+          <div class="award-year">2021</div>
+          <div class="award-title">Research Excellence Award</div>
+          <div class="award-org">Department of Environmental Science & Engineering</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container contact-section">
+      <div class="contact-info">
+        <div class="contact-label">Email</div>
+        <a href="mailto:rahulevs01@gmail.com">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="18" height="14" x="3" y="5" rx="2"/><polyline points="3,7 12,13 21,7"/></svg>
+          rahulevs01@gmail.com
+        </a>
+        <div class="contact-label">LinkedIn</div>
+        <a href="https://www.linkedin.com/in/rahulevs01" target="_blank">
+          <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.29h-3v-4.5c0-1.1-.9-2-2-2s-2 .9-2 2v4.5h-3v-9h3v1.24c.59-.84 1.53-1.24 2.5-1.24 1.93 0 3.5 1.57 3.5 3.5v5.5z"/></svg>
+          linkedin.com/in/rahulevs01
+        </a>
+      </div>
+      <form class="contact-form" action="mailto:rahulevs01@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    &copy; 2024 Rahul Kumar | Research Scholar | IIT (ISM) Dhanbad
+  </footer>
+</body>
+</html>
