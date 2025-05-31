@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ===== Header scroll shadow effect =====
     const header = document.getElementById('header');
     function updateHeader() {
         if (window.scrollY > 50) header.classList.add('scrolled');
@@ -7,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     window.addEventListener('scroll', updateHeader);
 
-    // ===== Mobile menu toggle & hamburger animation =====
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileNav = document.getElementById('mobileNav');
     if (mobileMenuBtn && mobileNav) {
@@ -26,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ===== Smooth scrolling for all #nav links =====
     const navLinks = document.querySelectorAll('a[href^="#"]');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -37,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 const headerHeight = header.offsetHeight;
                 const targetPosition = targetElement.offsetTop - headerHeight;
                 window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-                // Close mobile menu if open
                 if (mobileNav && mobileNav.classList.contains('active')) {
                     mobileNav.classList.remove('active');
                     const spans = mobileMenuBtn.querySelectorAll('span');
@@ -49,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== Animated fade-in/slide-up elements with IntersectionObserver =====
     const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
@@ -64,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // ===== Skill/progress bar reveal on scroll =====
     function animateBars(selector, delay = 100) {
         const bars = document.querySelectorAll(selector);
         const barObserver = new IntersectionObserver(function(entries) {
@@ -82,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
     animateBars('.skill-progress');
     animateBars('.progress-fill', 200);
 
-    // ===== Active navigation section highlight =====
     const sections = document.querySelectorAll('section[id]');
     const navigationLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
     function highlightActiveSection() {
@@ -101,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     window.addEventListener('scroll', highlightActiveSection);
 
-    // ===== Add highlight style for active navigation =====
     const style = document.createElement('style');
     style.textContent = `
         .nav-link.active, .mobile-nav-link.active {
@@ -111,7 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 
-    // ===== Parallax for floating SVG elements =====
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
         document.querySelectorAll('.floating-element').forEach((element, idx) => {
@@ -120,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== Enhanced card hover effect =====
     document.querySelectorAll('.research-card, .project-card, .skill-category, .award-content').forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-4px) scale(1.02)';
@@ -130,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== Social link icon subtle animation =====
     document.querySelectorAll('.social-link').forEach(link => {
         link.addEventListener('mouseenter', function() {
             const icon = this.querySelector('svg');
@@ -142,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== Earth rotation (if present) slows as user scrolls =====
     const earthRotation = document.querySelector('.earth-rotation');
     if (earthRotation) {
         window.addEventListener('scroll', function() {
@@ -152,7 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ===== Typewriter effect for hero subtitle =====
     const heroSubtitle = document.querySelector('.hero-subtitle');
     if (heroSubtitle) {
         const text = heroSubtitle.textContent;
@@ -171,15 +158,12 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(typeWriter, 700);
     }
 
-    // ===== Add fade-in to the body on load =====
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.5s ease-in-out';
     window.addEventListener('load', function() {
         document.body.style.opacity = '1';
     });
 
-    // ===== Show scholar's contact/email =====
-    // Add explicit email for quick reference
     const contactList = document.querySelector('.contact-list');
     if (contactList && !document.querySelector('.email-scholar')) {
         const emailItem = document.createElement('a');
@@ -200,6 +184,5 @@ document.addEventListener('DOMContentLoaded', function() {
         contactList.appendChild(emailItem);
     }
 
-    // ===== Scholar-specific touch: console log for debug =====
     console.log('🌱 Rahul Kumar | Research Scholar Portfolio loaded. Contact: rahulevs01@gmail.com');
 });
