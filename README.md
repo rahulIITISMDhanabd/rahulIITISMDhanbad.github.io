@@ -1,9 +1,14 @@
-I am Rahul Kumar, a PhD researcher specializing in environmental science with a strong focus on global water security and climate change. My expertise spans atmospheric sciences, climate modeling (CMIP6), and remote sensing using tools like ArcGIS, QGIS, and Google Earth Engine. I actively apply R and Python to analyze large-scale climatic and geospatial datasets to derive insights that support sustainable policy and decision-making.
+Rahul Kumar: Climate Change and Water Security Scholar
+I am Rahul Kumar, a dedicated PhD researcher in Environmental Science at IIT (ISM) Dhanbad, specializing in global water security and the impacts of climate change. My academic journey and research career are rooted in the belief that addressing the world's most pressing environmental challenges requires both rigorous science and innovative technology.
 
-Over the years, I have contributed to several interdisciplinary research projects, including studies on the impact of lockdown on urban air quality, pesticide usage in rural agriculture, and ongoing doctoral research into water security under future climate scenarios. My research interests include hydro-climatology, climate data visualization, and spatial analysis.
+With a core expertise in atmospheric sciences, climate modeling (CMIP6), and remote sensing, I utilize advanced tools such as ArcGIS, QGIS, and Google Earth Engine to analyze large-scale climatic and geospatial datasets. My proficiency in R and Python allows me to extract actionable insights from complex data, supporting evidence-based policymaking and sustainable development strategies.
 
-With a keen interest in technology, I have developed strong programming and analytical skills, backed by tools like MS Office, advanced Excel, and data visualization platforms. I bring a collaborative, adaptable, and self-driven work ethic, and continuously strive to adopt new tools and scientific approaches to address complex environmental challenges.
+Throughout my career, I have led and contributed to several interdisciplinary research projects, ranging from urban air quality assessment during lockdowns to the evaluation of pesticide impacts on rural agriculture and my ongoing doctoral research on water security under future climate scenarios. My work integrates hydro-climatology, climate data visualization, and spatial analysis, with a strong commitment to translating research into real-world impact.
 
-This portfolio showcases my research projects, technical skills, recognitions, and contributions to the field of climate and environmental science.
+Driven by curiosity and a passion for technology, I continuously develop my programming and analytical skills, adopting the latest scientific approaches to environmental data analysis. I thrive in collaborative, cross-functional environments, bringing adaptability, integrity, and self-motivation to every project.
 
-- Rahul Kumar
+This portfolio highlights my research, technical competencies, academic recognitions, and ongoing contributions to the field of climate and environmental science. My mission is to advance knowledge and solutions that foster resilience, sustainability, and informed decision-making in the face of global climate challenges.
+
+-Rahul Kumar (Resarch Scholar)
+Department of environmental science
+IIT (ISM) ,Dhanbad
