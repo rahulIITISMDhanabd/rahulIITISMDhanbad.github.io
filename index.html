@@ -4,452 +4,254 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rahul Kumar | Research Scholar - IIT (ISM) Dhanbad</title>
-  <meta name="description" content="Research Scholar in Environmental Science & Engineering at IIT (ISM) Dhanbad. Focus: Water Security, Climate Change, Hydrology, Remote Sensing, AI/ML.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #1660a9;
-      --primary-dark: #114674;
-      --accent: #0bb193;
-      --accent-light: #6ce5b1;
-      --bg: #f8fafc;
-      --white: #fff;
-      --gray: #64748b;
-      --gray-light: #cbd5e1;
-      --header: #2c3345;
-      --gradient: linear-gradient(90deg, #1660a9 0%, #22c55e 100%);
-      --gradient-accent: linear-gradient(90deg, #0bb193 0%, #3b82f6 100%);
-      --radius: 16px;
-    }
-    html { scroll-behavior: smooth; background: var(--bg);}
     body {
       margin: 0;
+      background: #fafbfd;
       font-family: 'Inter', Arial, sans-serif;
-      color: var(--header);
-      background: var(--bg);
-      font-size: 1.08rem;
-      min-height: 100vh;
+      color: #222;
     }
-    h1, h2, h3, h4 {
-      font-family: 'Playfair Display', serif;
-      margin-top: 0;
-      color: var(--primary-dark);
-    }
-    h1 { font-size: 2.3rem; font-weight: 700; letter-spacing: 1px;}
-    h2 { font-size: 2rem; font-weight: 700; letter-spacing: 1px;}
-    h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 0.7em;}
-    .gradient-text {
-      background: var(--gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-    }
-    .container { max-width: 1080px; margin: 0 auto; padding: 0 1.2rem;}
-    header {
-      background: var(--white);
-      border-bottom: 1.5px solid var(--gray-light);
-      box-shadow: 0 2px 8px rgba(16,96,169,0.06);
-      padding: 0.2rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .header-content { display: flex; align-items: center; justify-content: space-between;}
-    .logo-area { display: flex; align-items: center; gap: 0.7rem;}
-    .logo-area svg { color: var(--accent); width: 36px; height: 36px;}
-    .logo-area .site-title { font-size: 1.38rem; font-weight: 700; color: var(--primary-dark);}
-    nav { display: flex; gap: 1.2rem;}
-    nav a {
-      text-decoration: none;
-      color: var(--primary-dark);
-      font-weight: 600;
-      padding: 0.3em 0.5em;
-      border-radius: 6px;
-      transition: background 0.15s;
-    }
-    nav a:hover, nav a.active {
-      background: var(--accent-light);
-      color: var(--primary);
-    }
-    .hero {
-      background: var(--gradient);
-      color: var(--white);
-      padding: 3rem 0 2rem 0;
-      position: relative;
-    }
-    .hero-inner {
+    .navbar {
+      background: #181818;
+      color: #fff;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 2rem;
-      flex-wrap: wrap;
+      padding: 0 2rem;
+      height: 54px;
     }
-    .hero-img {
-      flex: 1 1 280px;
+    .navbar .brand {
       display: flex;
       align-items: center;
-      justify-content: center;
-      min-width: 220px;
+      gap: 0.8rem;
     }
-    .hero-img img {
-      width: 180px;
-      height: 180px;
+    .navbar .brand img {
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
-      border: 4px solid var(--white);
-      object-fit: cover;
-      box-shadow: 0 2px 16px rgba(34,197,94,0.16);
     }
-    .hero-content {
-      flex: 3 1 340px;
+    .navbar .brand span {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.24rem;
+      font-weight: 700;
+    }
+    .navbar nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .navbar nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 7px 16px;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: background 0.15s;
+    }
+    .navbar nav a.active, .navbar nav a:hover {
+      background: #bc2222;
+    }
+    .banner {
+      background: url('banner.jpg') center/cover no-repeat;
+      min-height: 230px;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-    }
-    .hero-content h1 { color: var(--white); font-size: 2.15rem; margin-bottom: 0.25em;}
-    .hero-content h2 { color: #e0f2fe; font-size: 1.13rem; font-weight: 600; margin-bottom: 0.2em;}
-    .hero-content p { color: #f1f5f9; margin-bottom: 0.5em;}
-    .hero-buttons { display: flex; gap: 1.1rem; margin-top: 0.4em;}
-    .btn {
-      padding: 0.72em 1.7em;
-      font-size: 1rem;
-      font-weight: 600;
-      border-radius: 30px;
-      border: none;
-      background: var(--white);
-      color: var(--primary-dark);
-      transition: box-shadow 0.18s, background 0.18s, color 0.18s;
-      cursor: pointer;
-      box-shadow: 0 2px 16px rgba(11,177,147,0.12);
-      text-decoration: none;
-      outline: none;
-    }
-    .btn-primary { background: var(--primary-dark); color: var(--white);}
-    .btn-primary:hover { background: var(--accent); color: var(--white);}
-    .btn-secondary { background: var(--white); color: var(--primary-dark);}
-    .btn-secondary:hover { background: var(--accent-light); color: var(--primary);}
-    section { padding: 3.3rem 0 2.4rem 0; background: var(--bg);}
-    .section-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.25em;}
-    .section-subtitle { color: var(--gray); font-size: 1.03rem; margin-bottom: 1.3em;}
-    .about-section { display: flex; flex-wrap: wrap; gap: 2.3rem; align-items: flex-start;}
-    .about-text { flex: 3 1 380px;}
-    .about-img { flex: 1 1 220px; min-width: 180px; display: flex; align-items: center; justify-content: center;}
-    .about-img img {
-      border-radius: var(--radius);
-      width: 200px;
-      height: 240px;
-      object-fit: cover;
-      box-shadow: 0 4px 16px rgba(16,96,169,0.08);
-    }
-    ul { padding-left: 1.2em;}
-    .tags { display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 0.4em;}
-    .tag {
-      background: var(--accent-light);
-      color: var(--primary-dark);
-      font-size: 0.97rem;
-      padding: 0.15em 0.7em;
-      border-radius: 12px;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      display: inline-block;
-    }
-    .skills-grid { display: flex; flex-wrap: wrap; gap: 2.3rem; justify-content: space-between;}
-    .skill-col {
-      flex: 1 1 220px;
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: 0 2px 12px rgba(16,96,169,0.07);
-      padding: 1.3rem 1.3rem 1rem 1.3rem;
-      min-width: 200px;
-      margin-bottom: 1rem;
-    }
-    .skill-title { font-size: 1.13rem; font-weight: 600; margin-bottom: 0.5em; color: var(--primary-dark);}
-    .skill-list { list-style: none; padding-left: 0; margin: 0;}
-    .skill-list li { margin-bottom: 0.45em; font-size: 1.02rem; color: var(--header);}
-    .card-grid { display: flex; flex-wrap: wrap; gap: 2.2rem; margin-top: 1.3em;}
-    .card {
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: 0 2px 12px rgba(11,177,147,0.08);
-      padding: 1.4em 1.2em;
-      flex: 1 1 260px;
-      min-width: 220px;
-      transition: transform 0.17s;
-    }
-    .card:hover { transform: translateY(-5px) scale(1.04);}
-    .card-title { font-size: 1.14rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.25em;}
-    .card .status {
-      background: var(--accent);
-      color: var(--white);
-      font-size: 0.83em;
-      padding: 0.05em 0.5em;
-      border-radius: 8px;
-      margin-left: 0.8em;
-      font-weight: 600;
-    }
-    .awards-timeline {
-      border-left: 3px solid var(--accent-light);
-      margin-left: 1.2em;
-      padding-left: 2em;
+      justify-content: flex-end;
+      padding: 3rem 2rem 1.7rem 2rem;
       position: relative;
     }
-    .award-item { margin-bottom: 2.2em; position: relative;}
-    .award-item::before {
-      content: '';
-      position: absolute;
-      left: -2.13em;
-      top: 0.7em;
-      width: 1.12em;
-      height: 1.12em;
-      background: var(--accent);
-      border-radius: 50%;
-      border: 2.5px solid var(--white);
-      box-shadow: 0 1px 4px rgba(11,177,147,0.17);
+    .banner:before {
+      content: "";
+      position: absolute; left:0; top:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.38);
+      z-index: 0;
     }
-    .award-year { font-size: 1.01em; color: var(--primary); font-weight: 600; margin-bottom: 0.1em;}
-    .award-title { font-weight: 700; font-size: 1.09em; margin-bottom: 0.15em; color: var(--primary-dark);}
-    .award-org { color: var(--gray); font-size: 0.99em;}
-    .contact-section { display: flex; flex-wrap: wrap; gap: 2.4rem; align-items: flex-start; margin-top: 2em;}
-    .contact-info {
-      flex: 1 1 260px;
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: 0 2px 12px rgba(16,96,169,0.07);
-      padding: 1.2em 1.5em 1em 1.5em;
-      min-width: 220px;
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      max-width: 550px;
     }
-    .contact-info a {
+    .banner-content h2 {
+      background: rgba(0,0,0,0.65);
+      padding: 0.5em 1em;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+      display: inline-block;
+      border-radius: 8px;
+    }
+    .banner-content h3 {
+      background: rgba(0,0,0,0.7);
+      font-weight: 400;
+      padding: 0.5em 1em;
+      font-size: 1rem;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .main {
+      display: flex;
+      gap: 2.5rem;
+      padding: 2.8rem 2rem 1.5rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      align-items: flex-start;
+    }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 14px;
+      object-fit: cover;
+      box-shadow: 0 2px 16px rgba(60,60,60,0.11);
+      margin-right: 0.7rem;
+    }
+    .profile-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+    }
+    .profile-info h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.05rem;
+      font-weight: 700;
+      margin: 0 0 0.1em 0;
+      color: #212121;
+    }
+    .profile-info .designation {
+      color: #b71c1c;
+      font-size: 1.07rem;
+      font-weight: 600;
+      margin-bottom: 0.25em;
+    }
+    .profile-info .institution {
+      color: #8b1f67;
+      font-size: 1.03rem;
+      margin-bottom: 0.3em;
+    }
+    .profile-info .contact-links {
+      margin: 0.2em 0 0.7em 0;
+    }
+    .contact-links a {
+      display: inline-block;
+      margin-right: 0.55em;
+      font-size: 1.45em;
+      vertical-align: middle;
+      color: #146eab;
       text-decoration: none;
-      color: var(--primary-dark);
+    }
+    .intro {
+      margin: 1.4em 0 0.2em 0;
+      font-size: 1.18rem;
+      color: #233e74;
+      font-weight: 600;
+    }
+    .about-text {
+      font-size: 1.02rem;
+      margin-bottom: 1em;
+    }
+    .edu-list {
+      font-size: 1.01rem;
+      margin-bottom: 0.85em;
+      margin-top: 0;
+    }
+    .edu-list li {
+      margin-bottom: 0.2em;
+    }
+    .research-int {
+      margin-top: 0.5em;
+      font-weight: 600;
+      font-size: 1.07rem;
+      color: #2323c7;
+    }
+    .ri-tags {
+      margin-top: 0.4em;
+      margin-bottom: 1.2em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.1em;
+    }
+    .ri-tag {
       display: flex;
       align-items: center;
-      gap: 0.8em;
-      margin-bottom: 0.8em;
-      font-size: 1.01em;
-      border-radius: 8px;
-      transition: background 0.13s;
-      padding: 0.3em 0.6em 0.3em 0;
+      background: #ecf5ff;
+      color: #0067ab;
+      font-size: 0.98rem;
+      padding: 0.25em 0.8em;
+      border-radius: 14px;
+      gap: 0.3em;
     }
-    .contact-info a:hover { background: var(--accent-light);}
-    .contact-info svg { color: var(--accent); min-width: 22px;}
-    .contact-label { font-weight: 600; color: var(--primary); font-size: 1.01em;}
-    .contact-form {
-      flex: 3 1 320px;
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: 0 2px 12px rgba(16,96,169,0.07);
-      padding: 1.3em 1.5em;
-      min-width: 260px;
+    .ri-tag i {
+      font-style: normal;
+      margin-right: 0.28em;
     }
-    .contact-form label { display: block; margin-bottom: 0.2em; color: var(--primary); font-weight: 600;}
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 0.7em;
-      margin-bottom: 1.1em;
-      border: 1.5px solid var(--gray-light);
-      border-radius: 8px;
-      font-size: 1.01em;
-      font-family: 'Inter', Arial, sans-serif;
-      outline: none;
-      background: var(--bg);
-      transition: border-color 0.17s;
-    }
-    .contact-form input:focus, .contact-form textarea:focus { border-color: var(--primary); background: #e0f2fe;}
-    .contact-form textarea { min-height: 90px; resize: vertical;}
-    .contact-form button {
-      background: var(--gradient-accent);
-      color: var(--white);
-      font-weight: 700;
-      padding: 0.8em 0;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      margin-top: 0.2em;
-      transition: background 0.16s, box-shadow 0.14s;
-      box-shadow: 0 2px 8px rgba(22,96,169,0.07);
-    }
-    .contact-form button:hover { background: var(--gradient);}
-    footer {
-      text-align: center;
-      color: var(--gray);
-      font-size: 1rem;
-      background: var(--bg);
-      border-top: 1px solid var(--gray-light);
-      padding: 1.3em 0 1em 0;
-      margin-top: 1em;
-    }
-    @media (max-width: 900px) {
-      .about-section, .skills-grid, .card-grid, .contact-section { flex-direction: column; gap: 1.5rem;}
-      .hero-inner { flex-direction: column; gap: 1.8rem;}
-      .about-img { justify-content: flex-start;}
-    }
-    @media (max-width: 540px) {
-      .container { padding: 0 0.4rem;}
-      .hero-img img, .about-img img { width: 100px; height: 120px;}
+    @media (max-width: 700px) {
+      .main { flex-direction: column; gap: 1.5rem; padding: 1.2rem;}
+      .profile-block { flex-direction: column; align-items: flex-start;}
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container header-content">
-      <div class="logo-area">
-        <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#0bb193"/><text x="16" y="22" font-size="14" font-family="Playfair Display" text-anchor="middle" fill="#fff">RK</text></svg>
-        <div class="site-title">Rahul Kumar</div>
-      </div>
-      <nav>
-        <a href="#about" class="active">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#research">Research</a>
-        <a href="#awards">Awards</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <div class="navbar">
+    <div class="brand">
+      <img src="rahul.jpg" alt="Rahul Kumar">
+      <span>Rahul Kumar</span>
     </div>
-  </header>
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-img">
-        <img src="profile.jpg" alt="Rahul Kumar profile photo" />
-      </div>
-      <div class="hero-content">
-        <h1><span class="gradient-text">Rahul Kumar</span></h1>
-        <h2>Research Scholar, Dept. of Environmental Science & Engineering<br>IIT (ISM) Dhanbad</h2>
-        <p>Exploring water security, climate change, hydroclimatology, remote sensing, and AI/ML for sustainable solutions.</p>
-        <div class="hero-buttons">
-          <a href="#research" class="btn btn-primary">View Research</a>
-          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">About me</a>
+      <a href="#">Publications</a>
+      <a href="#">Monitoring</a>
+      <a href="#">Resources</a>
+      <a href="#">Media</a>
+    </nav>
+  </div>
+  <div class="banner">
+    <div class="banner-content">
+      <h2>Earth is undergoing unprecedented climatic changes.</h2>
+      <h3>Let's prioritize today's and tomorrow's problems before it's too late!</h3>
+    </div>
+  </div>
+  <div class="main">
+    <div class="profile-block">
+      <img src="rahul.jpg" class="profile-pic" alt="Rahul Kumar">
+      <div class="profile-info">
+        <h1>Rahul Kumar</h1>
+        <div class="designation">Research Scholar</div>
+        <div class="institution">Department of Environmental Science & Engineering, IIT (ISM) Dhanbad</div>
+        <div class="contact-links">
+          <a href="mailto:rahulevs01@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+          <a href="tel:9636525194" title="Phone"><i class="fa fa-phone"></i></a>
+          <!-- Add social/profile links as needed -->
+        </div>
+        <div>
+          <span style="color:#004cbb;font-weight:600;">Mobile:</span> 9636525194 <br>
+          <span style="color:#004cbb;font-weight:600;">Email:</span> rahulevs01@gmail.com
         </div>
       </div>
     </div>
-  </section>
-  <section id="about">
-    <div class="container about-section">
+    <div>
+      <div class="intro">Hi, welcome to my website!</div>
       <div class="about-text">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">PhD Research Scholar, IIT (ISM) Dhanbad | Water Security & Climate Change</p>
-        <p>I am a research scholar in the Department of Environmental Science & Engineering at IIT (ISM) Dhanbad. My research focuses on the intersection of water security, climate change, hydroclimatology, and sustainable resource management, leveraging advanced methods such as remote sensing, machine learning, and climate modeling.</p>
-        <div class="tags">
-          <span class="tag">Water Security</span>
-          <span class="tag">Climate Change</span>
-          <span class="tag">Hydrology</span>
-          <span class="tag">Remote Sensing</span>
-          <span class="tag">AI/ML</span>
-          <span class="tag">Python</span>
-          <span class="tag">R</span>
-        </div>
+        I am Rahul Kumar, currently a research scholar at IIT (ISM) Dhanbad in the Department of Environmental Science & Engineering.
+        <br>
+        <ul class="edu-list">
+          <li>UGC NET Qualified (2022)</li>
+          <li>PG Diploma in Remote Sensing (BHU)</li>
+          <li>Integrated MSc in Environmental Science</li>
+        </ul>
+        I am passionate about solving real-world climate and water challenges using remote sensing, AI/ML, and geospatial techniques.
       </div>
-      <div class="about-img">
-        <img src="about.jpg" alt="About Rahul Kumar" />
-      </div>
-    </div>
-  </section>
-  <section id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-col">
-          <div class="skill-title">Domain</div>
-          <ul class="skill-list">
-            <li>Hydrology & Hydroclimatology</li>
-            <li>Climate Change Analysis</li>
-            <li>Remote Sensing</li>
-            <li>Environmental Data Analysis</li>
-          </ul>
-        </div>
-        <div class="skill-col">
-          <div class="skill-title">Technical</div>
-          <ul class="skill-list">
-            <li>Python, R</li>
-            <li>ArcGIS, QGIS</li>
-            <li>Google Earth Engine</li>
-            <li>Machine Learning, SVM, VIC Model</li>
-            <li>Pandas, Matplotlib, Numpy, Scikit-learn</li>
-          </ul>
-        </div>
-        <div class="skill-col">
-          <div class="skill-title">Other</div>
-          <ul class="skill-list">
-            <li>Research Writing</li>
-            <li>Data Visualization</li>
-            <li>Bayesian Network</li>
-            <li>Bias Correction</li>
-          </ul>
-        </div>
+      <div class="research-int">Research Interests:</div>
+      <div class="ri-tags">
+        <div class="ri-tag"><i class="fas fa-globe"></i> Water Security</div>
+        <div class="ri-tag"><i class="fas fa-temperature-high"></i> Climate Change</div>
+        <div class="ri-tag"><i class="fas fa-water"></i> Hydrology</div>
+        <div class="ri-tag"><i class="fas fa-satellite"></i> Remote Sensing & GIS</div>
+        <div class="ri-tag"><i class="fas fa-robot"></i> AI/ML for Environment</div>
       </div>
     </div>
-  </section>
-  <section id="research">
-    <div class="container">
-      <h2 class="section-title">Research & Projects</h2>
-      <div class="card-grid">
-        <div class="card">
-          <div class="card-title">Hydroclimatic Modeling of Indian River Basins <span class="status">Ongoing</span></div>
-          <div>Development and validation of hydroclimatic models for assessing river basin sustainability under changing climate scenarios using remote sensing and AI.</div>
-        </div>
-        <div class="card">
-          <div class="card-title">Bias Correction for Climate Models <span class="status">Completed</span></div>
-          <div>Application of statistical and ML techniques for improving accuracy of precipitation and temperature projections for India using CMIP6 and reanalysis datasets.</div>
-        </div>
-        <div class="card">
-          <div class="card-title">Water Security Assessment <span class="status">Ongoing</span></div>
-          <div>Integrated assessment of water resources using remote sensing and hydrological models to identify vulnerable regions and inform adaptation strategies.</div>
-        </div>
-        <div class="card">
-          <div class="card-title">Remote Sensing for Wetland Monitoring <span class="status">Completed</span></div>
-          <div>Monitoring and classification of wetland ecosystems using multispectral and time-series satellite imagery for policy recommendations.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="awards">
-    <div class="container">
-      <h2 class="section-title">Awards & Recognition</h2>
-      <div class="awards-timeline">
-        <div class="award-item">
-          <div class="award-year">2023</div>
-          <div class="award-title">Best Research Presentation</div>
-          <div class="award-org">IIT (ISM) Dhanbad</div>
-        </div>
-        <div class="award-item">
-          <div class="award-year">2022</div>
-          <div class="award-title">Young Scientist Travel Grant</div>
-          <div class="award-org">DST, Govt. of India</div>
-        </div>
-        <div class="award-item">
-          <div class="award-year">2021</div>
-          <div class="award-title">Research Excellence Award</div>
-          <div class="award-org">Department of Environmental Science & Engineering</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact">
-    <div class="container contact-section">
-      <div class="contact-info">
-        <div class="contact-label">Email</div>
-        <a href="mailto:rahulevs01@gmail.com">
-          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="18" height="14" x="3" y="5" rx="2"/><polyline points="3,7 12,13 21,7"/></svg>
-          rahulevs01@gmail.com
-        </a>
-        <div class="contact-label">LinkedIn</div>
-        <a href="https://www.linkedin.com/in/rahulevs01" target="_blank">
-          <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.29h-3v-4.5c0-1.1-.9-2-2-2s-2 .9-2 2v4.5h-3v-9h3v1.24c.59-.84 1.53-1.24 2.5-1.24 1.93 0 3.5 1.57 3.5 3.5v5.5z"/></svg>
-          linkedin.com/in/rahulevs01
-        </a>
-      </div>
-      <form class="contact-form" action="mailto:rahulevs01@gmail.com" method="POST" enctype="text/plain">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="Name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="Email" required>
-        <label for="message">Message</label>
-        <textarea id="message" name="Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-  <footer>
-    &copy; 2024 Rahul Kumar | Research Scholar | IIT (ISM) Dhanbad
-  </footer>
+  </div>
 </body>
 </html>
