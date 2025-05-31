@@ -6,4 +6,4 @@ With a keen interest in technology, I have developed strong programming and anal
 
 This portfolio showcases my research projects, technical skills, recognitions, and contributions to the field of climate and environmental science.
 
-- Rahul Kumar, ISM Dhanbad!
+- Rahul Kumar
