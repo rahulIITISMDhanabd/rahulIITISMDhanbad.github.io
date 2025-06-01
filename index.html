@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rahul Kumar | Research Scholar - IIT (ISM) Dhanbad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background: #fafbfd;
+      background: #f6f8fa;
       font-family: 'Inter', Arial, sans-serif;
-      color: #222;
+      color: #1a2233;
     }
     .navbar {
-      background: #181818;
+      background: #183153;
       color: #fff;
       display: flex;
       align-items: center;
@@ -32,9 +32,10 @@
       border-radius: 50%;
     }
     .navbar .brand span {
-      font-family: 'Playfair Display', serif;
+      font-family: inherit;
       font-size: 1.24rem;
       font-weight: 700;
+      letter-spacing: 0.5px;
     }
     .navbar nav {
       display: flex;
@@ -48,9 +49,11 @@
       font-weight: 500;
       font-size: 1rem;
       transition: background 0.15s;
+      font-family: inherit;
     }
     .navbar nav a.active, .navbar nav a:hover {
-      background: #bc2222;
+      background: #e94f37;
+      color: #fff;
     }
     .banner {
       background: url('nasa.jpg') center center/cover no-repeat, url('IIT-ISM.png') bottom right/120px no-repeat;
@@ -71,27 +74,39 @@
       z-index: 0;
     }
     .banner-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       position: relative;
       z-index: 2;
       color: #fff;
       max-width: 550px;
+      width: 100%;
     }
-    .banner-content h2 {
-      background: rgba(0,0,0,0.65);
+    .banner-content h2, .banner-content h3 {
+      background: rgba(24,49,83,0.75);
       padding: 0.5em 1em;
       font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 0.5em;
       display: inline-block;
       border-radius: 8px;
+      font-family: inherit;
     }
     .banner-content h3 {
-      background: rgba(0,0,0,0.7);
       font-weight: 400;
-      padding: 0.5em 1em;
       font-size: 1rem;
-      border-radius: 8px;
-      display: inline-block;
+    }
+    .banner-content iframe {
+      max-width: 350px;
+      height: 180px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(30,45,80,0.13);
+      border: 0;
+      margin: 0 auto;
+      display: block;
     }
     .main {
       display: flex;
@@ -115,22 +130,24 @@
       gap: 1.2rem;
     }
     .profile-info h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: inherit;
       font-size: 2.05rem;
       font-weight: 700;
       margin: 0 0 0.1em 0;
-      color: #212121;
+      color: #183153;
     }
     .profile-info .designation {
-      color: #b71c1c;
+      color: #e94f37;
       font-size: 1.07rem;
       font-weight: 600;
       margin-bottom: 0.25em;
+      font-family: inherit;
     }
     .profile-info .institution {
-      color: #8b1f67;
+      color: #2d5a88;
       font-size: 1.03rem;
       margin-bottom: 0.3em;
+      font-family: inherit;
     }
     .profile-info .contact-links {
       margin: 0.2em 0 0.7em 0;
@@ -146,50 +163,29 @@
     .intro {
       margin: 1.4em 0 0.2em 0;
       font-size: 1.18rem;
-      color: #233e74;
+      color: #183153;
       font-weight: 600;
+      font-family: inherit;
     }
-    .about-text {
-      font-size: 1.02rem;
-      margin-bottom: 1em;
-    }
-    .edu-list {
-      font-size: 1.01rem;
-      margin-bottom: 0.85em;
-      margin-top: 0;
-    }
-    .edu-list li {
-      margin-bottom: 0.2em;
+    .about-text, .edu-list, .research-int, .ri-tag {
+      font-family: inherit;
     }
     .research-int {
       margin-top: 0.5em;
       font-weight: 600;
       font-size: 1.07rem;
-      color: #2323c7;
-    }
-    .ri-tags {
-      margin-top: 0.4em;
-      margin-bottom: 1.2em;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.1em;
+      color: #2d5a88;
     }
     .ri-tag {
-      display: flex;
-      align-items: center;
-      background: #ecf5ff;
-      color: #0067ab;
+      background: #eaf0fa;
+      color: #183153;
       font-size: 0.98rem;
       padding: 0.25em 0.8em;
       border-radius: 14px;
       gap: 0.3em;
     }
-    .ri-tag i {
-      font-style: normal;
-      margin-right: 0.28em;
-    }
     .about-banner {
-      background: url('landsat.jpg') center center/cover no-repeat;
+      background: url('Rahul  landsat.png') center center/cover no-repeat;
       min-height: 220px;
       border-radius: 14px;
       margin: 2.5rem 0 1.5rem 0;
@@ -198,6 +194,50 @@
       align-items: flex-end;
       justify-content: flex-start;
       position: relative;
+    }
+    section {
+      font-family: inherit;
+    }
+    h1, h2, h3 {
+      font-family: inherit;
+      color: #183153;
+    }
+    /* Monitoring section cards */
+    #monitoring-section h1 {
+      color: #183153;
+      font-family: inherit;
+    }
+    #monitoring-section .card-btn, #monitoring-section button {
+      background: #e94f37;
+      color: #fff;
+      border: none;
+      padding: 0.6em 1.3em;
+      border-radius: 7px;
+      font-size: 1rem;
+      font-family: inherit;
+      cursor: not-allowed;
+      opacity: 0.7;
+      margin-top: 0.7em;
+    }
+    #monitoring-section .card-btn:active, #monitoring-section .card-btn:focus {
+      outline: 2px solid #183153;
+    }
+    /* Card backgrounds */
+    #monitoring-section .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 14px #e5ebfa;
+      width: 320px;
+      max-width: 100%;
+      padding: 1.2rem 1.1rem 1.5rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: inherit;
+    }
+    /* Section backgrounds */
+    #about-section, #publications-section, #resources-section, #media-section, #contact-section {
+      background: #f6f8fa;
     }
     @media (max-width: 700px) {
       .main { flex-direction: column; gap: 1.5rem; padding: 1.2rem;}
@@ -213,74 +253,145 @@
       <span>Rahul Kumar</span>
     </div>
     <nav>
-      <a href="#" class="active">Home</a>
-      <a href="#about-section" id="about-link">About me</a>
-      <a href="#">Publications</a>
-      <a href="#">Monitoring</a>
-      <a href="#">Resources</a>
-      <a href="#">Media</a>
+      <a href="#" class="nav-btn active" data-section="home-section">Home</a>
+      <a href="#" class="nav-btn" data-section="about-section">About me</a>
+      <a href="#" class="nav-btn" data-section="publications-section">Publications</a>
+      <a href="#" class="nav-btn" data-section="monitoring-section">Monitoring</a>
+      <a href="#" class="nav-btn" data-section="resources-section">Resources</a>
+      <a href="#" class="nav-btn" data-section="media-section">Media</a>
     </nav>
   </div>
-  <div class="banner">
-    <div class="banner-content">
-      <h2>Earth is undergoing unprecedented climatic changes.</h2>
-      <h3>Let's prioritize today's and tomorrow's problems before it's too late!</h3>
-    </div>
-  </div>
-  <div class="main">
-    <div class="profile-block">
-      <img src="profile.jpg" class="profile-pic" alt="Rahul Kumar" style="width:200px;height:280px;object-fit:cover;">
-      <div class="profile-info">
-        <h1>Rahul Kumar</h1>
-        <div class="designation">Research Scholar</div>
-        <div class="institution">Department of Environmental Science & Engineering, IIT (ISM) Dhanbad</div>
-        <div class="contact-links">
-          <a href="mailto:rahulevs01@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
-          <a href="tel:9636525194" title="Phone"><i class="fa fa-phone"></i></a>
-          <a href="https://www.linkedin.com/in/23dr0122" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/rahul4planet" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://orcid.org/0009-0004-7391-0731" title="ORCID" target="_blank"><i class="fab fa-orcid"></i></a>
-          <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-          <a href="https://www.researchgate.net/profile/YOUR_RESEARCHGATE_ID" title="ResearchGate" target="_blank"><i class="fab fa-researchgate"></i></a>
-        </div>
-        <div>
-          <span style="color:#004cbb;font-weight:600;">Mobile:</span> 9636525194 <br>
-          <span style="color:#004cbb;font-weight:600;">Email:</span> rahulevs01@gmail.com
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="intro">Hi, welcome to my website!</div>
-      <div class="about-text">
-        I am Rahul Kumar, currently a research scholar at IIT (ISM) Dhanbad in the Department of Environmental Science & Engineering.
+  <!-- Banner Section -->  <div style="
+    width:100%;
+    min-height:230px;
+    background: url('Rahul  landsat.png') center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 18px;
+    margin: 0 auto 2.5em auto;
+    box-shadow: 0 4px 24px rgba(30,40,70,0.13);
+    position: relative;
+    overflow: hidden;
+  ">
+    <!-- Overlay for readability -->
+    <div style="
+      background: rgba(18,32,63,0.56);
+      padding: 2.7em 2em 2.2em 2em;
+      border-radius: 18px;
+      max-width: 750px;
+      margin: 2.5em 1em;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 2px 18px rgba(28,44,77,0.13);
+      font-family: 'Inter', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      gap: 2.2em;
+    ">
+      <div style="font-size:1.5rem; font-style:italic; line-height:1.55;">
+        “If you do not change your lifestyle, no policy or technology can save the planet. The world is not outside you—it is you.”
         <br>
-        <ul class="edu-list">
-          <li>UGC NET Qualified (2022)</li>
-          <li>PG Diploma in Remote Sensing (BHU)</li>
-          <li>Integrated MSc in Environmental Science</li>
-        </ul>
-        I am passionate about solving real-world climate and water challenges using remote sensing, AI/ML, and geospatial techniques.
-      </div>
-      <div class="research-int">Research Interests:</div>
-      <div class="ri-tags">
-        <div class="ri-tag"><i class="fas fa-globe"></i> Hydroclimatology</div>
-        <div class="ri-tag"><i class="fas fa-temperature-high"></i> Climate Change</div>
-        <div class="ri-tag"><i class="fas fa-water"></i> Hydrology</div>
-        <div class="ri-tag"><i class="fas fa-satellite"></i> Remote Sensing & GIS</div>
-        <div class="ri-tag"><i class="fas fa-robot"></i> AI/ML for climate change </div>
+        <span style="font-size:1.12rem; font-style:normal; font-weight:600; display:block; margin-top:1.2em;">— Acharya Prashant</span>
       </div>
     </div>
   </div>
+  <!-- HOME SECTION -->
+  <section id="home-section" class="main-section">
+    <div class="main">
+      <div class="profile-block">
+        <img src="profile.jpg" class="profile-pic" alt="Rahul Kumar" style="width:200px;height:280px;object-fit:cover;">
+        <div class="profile-info">
+          <h1>Rahul Kumar</h1>
+          <div class="designation">Research Scholar</div>
+          <div class="institution">Department of Environmental Science & Engineering, IIT (ISM) Dhanbad</div>
+          <div class="contact-links">
+            <a href="mailto:rahulevs01@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+            <a href="tel:9636525194" title="Phone"><i class="fa fa-phone"></i></a>
+            <a href="https://www.linkedin.com/in/23dr0122" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/rahul4planet" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://orcid.org/0009-0004-7391-0731" title="ORCID" target="_blank"><i class="fab fa-orcid"></i></a>
+            <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://www.researchgate.net/profile/YOUR_RESEARCHGATE_ID" title="ResearchGate" target="_blank"><i class="fab fa-researchgate"></i></a>
+          </div>
+          <div>
+            <span style="color:#004cbb;font-weight:600;">Mobile:</span> 9636525194 <br>
+            <span style="color:#004cbb;font-weight:600;">Email:</span> rahulevs01@gmail.com
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="intro">Hi, welcome to my website!</div>
+        <div class="about-text">
+          I am Rahul Kumar, currently a research scholar at IIT (ISM) Dhanbad in the Department of Environmental Science & Engineering.
+          <br>
+          <ul class="edu-list">
+            <li>UGC NET Qualified (2022)</li>
+            <li>PG Diploma in Remote Sensing (BHU)</li>
+            <li>Integrated MSc in Environmental Science</li>
+          </ul>
+          I am passionate about solving real-world climate and water challenges using remote sensing, AI/ML, and geospatial techniques.
+        </div>
+        <div class="research-int">Research Interests:</div>
+        <div class="ri-tags">
+          <div class="ri-tag"><i class="fas fa-globe"></i> Hydroclimatology</div>
+          <div class="ri-tag"><i class="fas fa-temperature-high"></i> Climate Change</div>
+          <div class="ri-tag"><i class="fas fa-water"></i> Hydrology</div>
+          <div class="ri-tag"><i class="fas fa-satellite"></i> Remote Sensing & GIS</div>
+          <div class="ri-tag"><i class="fas fa-robot"></i> AI/ML for climate change </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT SECTION (Home bottom) -->
+    <section style="background:#f7f7f7;padding:2.5em 0;">
+      <div style="max-width:1400px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:2.5em;">
+        <!-- Map -->
+        <div style="flex:1 1 400px; min-width:320px;display:flex;align-items:center;justify-content:center;">
+          <div style="width:100%;max-width:420px;margin:0 auto;display:flex;justify-content:center;">
+            <iframe
+              src="https://www.google.com/maps?q=Department+of+Environmental+Science+and+Engineering,+IIT+(ISM)+Dhanbad&output=embed"
+              width="100%"
+              height="320"
+              style="border:0; border-radius:12px; box-shadow:0 4px 24px rgba(30,45,80,0.13); display:block; margin:0 auto;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        <!-- Contact Details -->
+        <div style="flex:1 1 400px; min-width:320px;display:flex;align-items:center;justify-content:center;">
+          <div style="text-align:center;">
+            <div style="font-size:2.2rem;font-family:'Inter',sans-serif;color:#183153;font-weight:700;margin-bottom:0.7em;letter-spacing:0.5px;text-decoration: underline;">Contacts</div>
+            <div style="font-size:1.07rem;margin-bottom:1em;">
+              <span style="color:#e94f37;font-weight:700;">Office:</span><br>
+              Water Security and Climate Change lab<br>
+              Department of Environmental Science & Engineering<br>
+              IIT (ISM) Dhanbad, Jharkhand, INDIA
+            </div>
+            <div style="font-size:1.08rem;margin-bottom:1em;">
+              <span style="color:#e94f37;font-weight:700;">Mobile:</span><br>
+              (+91) 9636525194
+            </div>
+            <div style="font-size:1.08rem;">
+              <span style="color:#e94f37;font-weight:700;">Email:</span><br>
+              rahulevs01@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
 
-  <!-- LOGOS ROW: top Banner -->
-  <div style="background:#fff;padding:1.7rem 0 1rem 0;display:flex;justify-content:center;align-items:center;gap:2.2rem;box-shadow:0 2px 10px rgba(30,60,130,0.07);">
-    <img src="IIT-ISM.png" alt="IIT ISM Dhanbad" style="height:150px;">
-    <img src="bhu.jpg" alt="BHU Varanasi" style="height:150px;">
-    <img src="curaj.jpg" alt="Central University of Rajasthan" style="height:150px;">
-  </div>
-
-  <!-- ABOUT SECTION: Education background & Awards -->
-  <section id="about-edu" style="background:#fafdff;padding:0 0 2.2rem 0;">
+  <!-- ABOUT SECTION -->
+  <section id="about-section" class="main-section" style="display:none;">
+    <!-- LOGOS ROW: About section top -->
+    <div id="about-logos-row" style="background:#fff;padding:1.2rem 0 1.2rem 0;display:flex;justify-content:center;align-items:center;gap:2.2rem;box-shadow:0 2px 10px rgba(30,60,130,0.07);margin-bottom:0.5rem;">
+      <img src="IIT-ISM.png" alt="IIT ISM Dhanbad" style="width:150px;height:160px;object-fit:contain;">
+      <img src="bhu.jpg" alt="BHU Varanasi" style="width:150px;height:160px;object-fit:contain;">
+      <img src="curaj.jpg" alt="Central University of Rajasthan" style="width:150px;height:160px;object-fit:contain;">
+    </div>
     <div style="max-width:900px;margin:2.5rem auto 0 auto;padding:0 1rem;">
       <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#114674;margin-bottom:1.2rem;">About Me & Education</h2>
       <div style="background:#fff;padding:1.5rem 1.3rem 1.3rem 1.3rem;border-radius:14px;box-shadow:0 2px 14px #e5ebfa;">
@@ -325,8 +436,51 @@
     </div>
   </section>
 
-  <!-- Contact Section with Google Map and Details -->
-  <section id="contact" style="background: #f4f4f4;">
+  <!-- PUBLICATIONS SECTION -->
+  <section id="publications-section" class="main-section" style="display:none;">
+    <div style="max-width:900px;margin:2.5rem auto 0 auto;padding:0 1rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#114674;margin-bottom:1.2rem;">Publications</h2>
+      <div style="background:#fff;padding:1.5rem 1.3rem 1.3rem 1.3rem;border-radius:14px;box-shadow:0 2px 14px #e5ebfa;">
+        <p>Coming soon...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MONITORING SECTION: Video + Card-based layout -->
+  <section id="monitoring-section" class="main-section" style="display:none;">
+    <div style="max-width:1100px;margin:0 auto;padding:2.5rem 1rem 0 1rem;">
+      <h1 style="font-family:'Playfair Display',serif;font-size:2rem;color:#114674;text-align:center;margin-bottom:0.7em;">Monitoring and Early Warning System<br><span style="font-size:1.1rem;font-weight:400;color:#b71c1c;">(Experimental)</span></h1>
+      <p style="text-align:center;font-size:1.13rem;color:#bc2222;margin-bottom:2.2rem;">The web portals are under development and will be published soon!</p>
+      <div style="display:flex;justify-content:center;margin-bottom:2.5rem;">
+        <video controls style="max-width:100%;border-radius:14px;box-shadow:0 2px 14px #e5ebfa;" poster="Rahul landsat.png">
+          <source src="GISTEMP_Spiral_60sec_F.m4v" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+  </section>
+
+  <!-- RESOURCES SECTION -->
+  <section id="resources-section" class="main-section" style="display:none;">
+    <div style="max-width:900px;margin:2.5rem auto 0 auto;padding:0 1rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#114674;margin-bottom:1.2rem;">Resources</h2>
+      <div style="background:#fff;padding:1.5rem 1.3rem 1.3rem 1.3rem;border-radius:14px;box-shadow:0 2px 14px #e5ebfa;">
+        <p>Coming soon...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA SECTION -->
+  <section id="media-section" class="main-section" style="display:none;">
+    <div style="max-width:900px;margin:2.5rem auto 0 auto;padding:0 1rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#114674;margin-bottom:1.2rem;">Media</h2>
+      <div style="background:#fff;padding:1.5rem 1.3rem 1.3rem 1.3rem;border-radius:14px;box-shadow:0 2px 14px #e5ebfa;">
+        <p>Coming soon...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact-section" class="main-section" style="display:none;">
     <div style="max-width:1300px;margin:0 auto;padding:2.5rem 1rem;display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;">
       <div style="flex:1 1 380px;min-width:320px;">
         <iframe 
@@ -352,5 +506,26 @@
       </div>
     </div>
   </section>
+
+  <script>
+    // SPA navigation: show only the selected section
+    const navBtns = document.querySelectorAll('.nav-btn');
+    const sections = document.querySelectorAll('.main-section');
+    navBtns.forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        navBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const target = btn.getAttribute('data-section');
+        sections.forEach(sec => {
+          if(sec.id === target) {
+            sec.style.display = '';
+          } else {
+            sec.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
