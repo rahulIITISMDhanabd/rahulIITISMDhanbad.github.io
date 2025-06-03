@@ -1,542 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rahul Kumar | Research Scholar - IIT (ISM) Dhanbad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      background: #f6f8fa;
-      font-family: 'Inter', Arial, sans-serif;
-      color: #1a2233;
-    }
-    .navbar {
-      background: #183153;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 2rem;
-      height: 54px;
-    }
-    .navbar .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-    .navbar .brand img {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-    }
-    .navbar .brand span {
-      font-family: inherit;
-      font-size: 1.24rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-    .navbar nav {
-      display: flex;
-      gap: 1.5rem;
-    }
-    .navbar nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 7px 16px;
-      border-radius: 4px;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: background 0.15s;
-      font-family: inherit;
-    }
-    .navbar nav a.active, .navbar nav a:hover {
-      background: #e94f37;
-      color: #fff;
-    }
-    .banner {
-      background: url('nasa.jpg') center center/cover no-repeat, url('IIT-ISM.png') bottom right/120px no-repeat;
-      min-height: 230px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 3rem 2rem 1.7rem 2rem;
-      position: relative;
-      border-radius: 18px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.13);
-      overflow: hidden;
-    }
-    .banner:before {
-      content: "";
-      position: absolute; left:0; top:0; right:0; bottom:0;
-      background: rgba(0,0,0,0.38);
-      z-index: 0;
-    }
-    .banner-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: relative;
-      z-index: 2;
-      color: #fff;
-      max-width: 550px;
-      width: 100%;
-    }
-    .banner-content h2, .banner-content h3 {
-      background: rgba(24,49,83,0.75);
-      padding: 0.5em 1em;
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 0.5em;
-      display: inline-block;
-      border-radius: 8px;
-      font-family: inherit;
-    }
-    .banner-content h3 {
-      font-weight: 400;
-      font-size: 1rem;
-    }
-    .banner-content iframe {
-      max-width: 350px;
-      height: 180px;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(30,45,80,0.13);
-      border: 0;
-      margin: 0 auto;
-      display: block;
-    }
-    .main {
-      display: flex;
-      gap: 2.5rem;
-      padding: 2.8rem 2rem 1.5rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-      align-items: flex-start;
-    }
-    .profile-pic {
-      width: 200px;
-      height: 280px;
-      border-radius: 14px;
-      object-fit: cover;
-      box-shadow: 0 2px 16px rgba(60,60,60,0.11);
-      margin-right: 0.7rem;
-    }
-    .profile-block {
-      display: flex;
-      align-items: flex-start;
-      gap: 1.2rem;
-    }
-    .profile-info h1 {
-      font-family: inherit;
-      font-size: 2.05rem;
-      font-weight: 700;
-      margin: 0 0 0.1em 0;
-      color: #183153;
-    }
-    .profile-info .designation {
-      color: #e94f37;
-      font-size: 1.07rem;
-      font-weight: 600;
-      margin-bottom: 0.25em;
-      font-family: inherit;
-    }
-    .profile-info .institution {
-      color: #2d5a88;
-      font-size: 1.03rem;
-      margin-bottom: 0.3em;
-      font-family: inherit;
-    }
-    .profile-info .contact-links {
-      margin: 0.2em 0 0.7em 0;
-    }
-    .contact-links a {
-      display: inline-block;
-      margin-right: 0.55em;
-      font-size: 1.45em;
-      vertical-align: middle;
-      color: #146eab;
-      text-decoration: none;
-    }
-    .intro {
-      margin: 1.4em 0 0.2em 0;
-      font-size: 1.18rem;
-      color: #183153;
-      font-weight: 600;
-      font-family: inherit;
-    }
-    .about-text, .edu-list, .research-int, .ri-tag {
-      font-family: inherit;
-    }
-    .research-int {
-      margin-top: 0.5em;
-      font-weight: 600;
-      font-size: 1.07rem;
-      color: #2d5a88;
-    }
-    .ri-tag {
-      background: #eaf0fa;
-      color: #183153;
-      font-size: 0.98rem;
-      padding: 0.25em 0.8em;
-      border-radius: 14px;
-      gap: 0.3em;
-    }
-    .about-banner {
-      background: url('Rahul  landsat.png') center center/cover no-repeat;
-      min-height: 220px;
-      border-radius: 14px;
-      margin: 2.5rem 0 1.5rem 0;
-      box-shadow: 0 2px 16px rgba(60,60,60,0.11);
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-start;
-      position: relative;
-    }
-    section {
-      font-family: inherit;
-    }
-    h1, h2, h3 {
-      font-family: inherit;
-      color: #183153;
-    }
-    /* Monitoring section cards */
-    #monitoring-section h1 {
-      color: #183153;
-      font-family: inherit;
-    }
-    #monitoring-section .card-btn, #monitoring-section button {
-      background: #e94f37;
-      color: #fff;
-      border: none;
-      padding: 0.6em 1.3em;
-      border-radius: 7px;
-      font-size: 1rem;
-      font-family: inherit;
-      cursor: not-allowed;
-      opacity: 0.7;
-      margin-top: 0.7em;
-    }
-    #monitoring-section .card-btn:active, #monitoring-section .card-btn:focus {
-      outline: 2px solid #183153;
-    }
-    /* Card backgrounds */
-    #monitoring-section .card {
-      background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 2px 14px #e5ebfa;
-      width: 320px;
-      max-width: 100%;
-      padding: 1.2rem 1.1rem 1.5rem 1.1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-family: inherit;
-    }
-    /* Section backgrounds */
-    #about-section, #publications-section, #resources-section, #media-section, #contact-section {
-      background: #f6f8fa;
-    }
-    @media (max-width: 700px) {
-      .main { flex-direction: column; gap: 1.5rem; padding: 1.2rem;}
-      .profile-block { flex-direction: column; align-items: flex-start;}
-    }
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Kumar - Environmental Science Professional</title>
+    <meta name="description" content="Portfolio of Rahul Kumar, PhD candidate in Environmental Science & Engineering at IIT Dhanbad, specializing in Hydrology and Water Resource Science">
+    <meta name="keywords" content="Environmental Science, Hydrology, Water Resources, Remote Sensing, GIS, PhD, Research">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="navbar">
-    <div class="brand">
-      <img src="IIT-ISM.png" alt="IIT (ISM) Dhanbad Logo">
-      <span>Rahul Kumar</span>
-    </div>
-    <nav>
-      <a href="#" class="nav-btn active" data-section="home-section">Home</a>
-      <a href="#" class="nav-btn" data-section="about-section">About me</a>
-      <a href="#" class="nav-btn" data-section="publications-section">Publications</a>
-      <a href="#" class="nav-btn" data-section="monitoring-section">Monitoring</a>
-      <a href="#" class="nav-btn" data-section="resources-section">Resources</a>
-      <a href="#" class="nav-btn" data-section="media-section">Media</a>
-    </nav>
-  </div>
-  <!-- Banner Section -->  <div style="
-    width:100%;
-    min-height:230px;
-    background: url('Rahul  landsat.png') center center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    border-radius: 18px;
-    margin: 0 auto 2.5em auto;
-    box-shadow: 0 4px 24px rgba(30,40,70,0.13);
-    position: relative;
-    overflow: hidden;
-  ">
-    <!-- Overlay for readability -->
-    <div style="
-      background: rgba(18,32,63,0.56);
-      padding: 2.7em 2em 2.2em 2em;
-      border-radius: 18px;
-      max-width: 750px;
-      margin: 2.5em 1em;
-      text-align: center;
-      color: #fff;
-      box-shadow: 0 2px 18px rgba(28,44,77,0.13);
-      font-family: 'Inter', Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      gap: 2.2em;
-    ">
-      <div style="font-size:1.5rem; font-style:italic; line-height:1.55;">
-        “If you do not change your lifestyle, no policy or technology can save the planet. The world is not outside you—it is you.”
-        <br>
-        <span style="font-size:1.12rem; font-style:normal; font-weight:600; display:block; margin-top:1.2em;">— Acharya Prashant</span>
-      </div>
-    </div>
-  </div>
-  <!-- HOME SECTION -->
-<section id="home-section" class="main-section" style="">
-  <div style="max-width:1100px;margin:0 auto;display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2.5em;">
-    <!-- LEFT COLUMN: Profile Photo -->
-    <div style="flex:0 0 180px; max-width:220px; display:flex; align-items:flex-start; justify-content:center;">
-      <img src="profile.jpg" alt="Rahul Kumar profile photo" style="width:180px;height:220px;object-fit:cover;border-radius:12px;box-shadow:0 4px 16px rgba(40,80,160,0.14);border:2.5px solid #e7eaf2;background:#f5f7fa;">
-    </div>
-    <!-- RIGHT COLUMN: Name, Designation, Institute, Socials, etc. -->
-    <div style="flex:1 1 340px; min-width:260px; display:flex; flex-direction:column; justify-content:center;">
-      <h1 style="font-size:2.2rem;color:#19386a;font-weight:800;margin:0 0 0.2em 0;">Rahul Kumar</h1>
-      <div style="font-size:1.18rem;color:#222;font-weight:500;margin-bottom:0.2em;">Research Scholar</div>
-      <div style="font-size:1.13rem;color:#b71c1c;font-weight:600;margin-bottom:0.7em;">Department of Environmental Science & Engineering,<br>IIT (ISM) Dhanbad</div>
-      <div style="margin-bottom:1.1em;">
-        <a href="mailto:rahulevs01@gmail.com" title="Email" style="font-size:1.35em;color:#285c9c;margin:0 6px;"><i class="fa fa-envelope"></i></a>
-        <a href="tel:9636525194" title="Phone" style="font-size:1.35em;color:#285c9c;margin:0 6px;"><i class="fa fa-phone"></i></a>
-        <a href="https://www.linkedin.com/in/23dr0122" title="LinkedIn" target="_blank" style="font-size:1.35em;color:#0a66c2;margin:0 6px;"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/rahul4planet" title="GitHub" target="_blank" style="font-size:1.35em;color:#23272d;margin:0 6px;"><i class="fab fa-github"></i></a>
-        <a href="https://orcid.org/0009-0004-7391-0731" title="ORCID" target="_blank" style="font-size:1.35em;color:#47A048;margin:0 6px;"><i class="fab fa-orcid"></i></a>
-        <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" title="Google Scholar" target="_blank" style="font-size:1.35em;color:#15418c;margin:0 6px;"><i class="fas fa-graduation-cap"></i></a>
-        <a href="https://www.researchgate.net/profile/YOUR_RESEARCHGATE_ID" title="ResearchGate" target="_blank" style="font-size:1.35em;color:#14b15c;margin:0 6px;"><i class="fab fa-researchgate"></i></a>
-      </div>
-      <div style="font-size:1.23rem; color:#19386a; font-weight:700; margin-bottom:0.5em;">Hi, welcome to my website!</div>
-      <div style="font-size:1.09rem; color:#283342; margin-bottom:1.1em;">
-        I am deeply committed to addressing real-world climate and water challenges using remote sensing, AI-ML, and geospatial technologies.<br>
-        My research focuses on uncertainties in climate projections for India, integrating hydrological data with advanced modeling, under the guidance of Prof. Riya Dutta.
-      </div>
-      <!-- RESEARCH INTERESTS -->
-      <div style="margin-bottom:0.8em;">
-        <span style="color:#265ea8;font-weight:700;">Research Interests:</span>
-        <span style="display:inline-block;background:#eaf3fb;padding:0.33em 0.9em;border-radius:15px;color:#184060;margin:0 0.19em 0.19em 0;font-size:1.02rem;">Hydroclimatology</span>
-        <span style="display:inline-block;background:#eaf3fb;padding:0.33em 0.9em;border-radius:15px;color:#184060;margin:0 0.19em 0.19em 0;font-size:1.02rem;">Climate Change</span>
-        <span style="display:inline-block;background:#eaf3fb;padding:0.33em 0.9em;border-radius:15px;color:#184060;margin:0 0.19em 0.19em 0;font-size:1.02rem;">Hydrology</span>
-        <span style="display:inline-block;background:#eaf3fb;padding:0.33em 0.9em;border-radius:15px;color:#184060;margin:0 0.19em 0.19em 0;font-size:1.02rem;">Remote Sensing & GIS</span>
-        <span style="display:inline-block;background:#eaf3fb;padding:0.33em 0.9em;border-radius:15px;color:#184060;margin:0 0.19em 0.19em 0;font-size:1.02rem;">AI/ML</span>
-        <span style="display:inline-block;background:#eaf3fb;padding:0.33em 0.9em;border-radius:15px;color:#184060;margin:0 0.19em 0.19em 0;font-size:1.02rem;">Climate Data Apps</span>
-      </div>
-      <div style="font-size:1.01rem;color:#3a4872;margin-bottom:0.8em;">
-        <strong>Key Skills:</strong> Python, R, GIS, Remote Sensing, Data Science, Visualization, Open Science
-      </div>
-      <div style="font-size:1.01rem;color:#3a4872;">
-        <strong>Highlights:</strong> UGC NET (2022) | PG Diploma (BHU) | Integrated MSc | Climate portal developer
-      </div>
-      <div style="background:#f7faff;border-left:4px solid #3881e6;border-radius:10px;padding:0.8em 1.1em;margin-top:1em;font-size:1.01rem;color:#254b97;">
-        <strong>Did you know?</strong>
-        <ul style="margin:0.38em 0 0 1em;padding-left:0.2em;line-height:1.5;color:#253149;">
-          <li>Builds interactive dashboards for climate data</li>
-          <li>Visualizations featured in national outreach events</li>
-          <li>Active in open-source science collaborations</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- CONTACT & LOCATION: Home bottom -->
-  <div style="width:100%;max-width:1100px;margin:2.5em auto 0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2.5em;">
-    <!-- Google Map -->
-    <div style="flex:1 1 380px;min-width:320px;display:flex;align-items:center;justify-content:center;">
-      <iframe 
-        src="https://www.google.com/maps?q=Department+of+Environmental+Science+and+Engineering,+IIT+(ISM)+Dhanbad&output=embed"
-        width="100%" height="310" style="border:0;border-radius:14px;box-shadow:0 2px 14px #e5ebfa;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <!-- Contact Details -->
-    <div style="flex:2 1 480px;min-width:320px;text-align:center;">
-      <h2 style="font-family:'Playfair Display',serif;text-align:center;font-size:2rem;margin-bottom:1.2rem;"><u>Contacts</u></h2>
-      <div style="font-size:1.13rem;color:#20222a;margin-bottom:1.2rem;">
-        Water Security and Climate Change lab <br>
-        Department of Environmental Science & Engineering<br>
-        IIT (ISM) Dhanbad, Jharkhand, INDIA<br>
-        <span style="color:#15418c;font-size:0.98em;">Google Maps: <a href="https://goo.gl/maps/2Qw2Qn6Qn6Q2" target="_blank" style="color:#0a66c2;text-decoration:underline;">View Location</a></span>
-      </div>
-      <div style="font-size:1.13rem;color:#20222a;margin-bottom:1.2rem;">
-        <b style="color:#b71c1c;">Mobile:</b><br>
-        (+91) 9636525194
-      </div>
-      <div style="font-size:1.13rem;color:#20222a;">
-        <b style="color:#b71c1c;">Email:</b><br>
-        <span>rahulevs01@gmail.com</span>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ABOUT SECTION -->
-  <section id="about-section" class="main-section" style="display:none;">
-    <!-- LOGOS ROW: About section top -->
-    <div id="about-logos-row" style="background:#fff;padding:1.2rem 0 1.2rem 0;display:flex;justify-content:center;align-items:center;gap:2.2rem;box-shadow:0 2px 10px rgba(30,60,130,0.07);margin-bottom:0.5rem;">
-      <img src="IIT-ISM.png" alt="IIT ISM Dhanbad" style="width:150px;height:160px;object-fit:contain;">
-      <img src="bhu.jpg" alt="BHU Varanasi" style="width:150px;height:160px;object-fit:contain;">
-      <img src="curaj.jpg" alt="Central University of Rajasthan" style="width:150px;height:160px;object-fit:contain;">
-    </div>
-    <div style="max-width:900px;margin:2.5rem auto 0 auto;padding:0 1rem;">
-      <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#114674;margin-bottom:1.2rem;">About Me & Education</h2>
-      <div style="background:#fff;padding:1.5rem 1.3rem 1.3rem 1.3rem;border-radius:14px;box-shadow:0 2px 14px #e5ebfa;">
-        <h3 style="color:#273964;margin-bottom:1rem;font-size:1.1rem;">Current Education</h3>
-        <ul style="list-style:disc;padding-left:1.1em;font-size:1.08rem;line-height:1.7;">
-          <li>
-            <b>Ph.D. (Ongoing)</b> – Environmental Science & Engineering, <span style="color:#254b97;">IIT (ISM) Dhanbad</span>
-            <br><span style="color:#bc2222;font-size:0.95em;">July 2023–present</span>
-          </li>
-        </ul>
-        <h3 style="color:#273964;margin-bottom:1rem;margin-top:2.3rem;font-size:1.1rem;">Previous Education</h3>
-        <ul style="list-style:disc;padding-left:1.1em;font-size:1.08rem;line-height:1.7;">
-          <li>
-            <b>PG Diploma</b> – Remote Sensing & GIS, <span style="color:#254b97;">Banaras Hindu University (BHU), Varanasi</span>
-            <br><span style="color:#666;font-size:0.97em;">Aug 2022 – July 2023</span>
-            <br><span style="color:#444;font-size:0.97em;">Project: Estimation of Land Surface Temperature through Atmospherically Corrected Landsat Image</span>
-          </li>
-          <li>
-            <b>M.Sc.</b> – Environmental Science, <span style="color:#254b97;">Central University of Rajasthan, Ajmer</span>
-            <br><span style="color:#666;font-size:0.97em;">June 2019 – July 2021</span>
-            <br><span style="color:#444;font-size:0.97em;">Dissertation: Impact of Lockdown on Air Quality and Associated Health Issue: A Case Study of Patna City, Bihar</span>
-          </li>
-          <li>
-            <b>B.Sc.</b> – Environmental Science, <span style="color:#254b97;">Central University of Rajasthan, Ajmer</span>
-            <br><span style="color:#666;font-size:0.97em;">June 2016 – May 2019</span>
-            <br><span style="color:#444;font-size:0.97em;">Minor Project: Pesticide Usage and its Impact on Farmers of Mundoti Village (Ajmer), Rajasthan: A Case Study</span>
-          </li>
-        </ul>
-        <h3 style="color:#273964;margin-bottom:1rem;margin-top:2.3rem;font-size:1.1rem;">Awards & Achievements</h3>
-        <ul style="font-size:1.06rem;list-style-type:disc;padding-left:1.2em;line-height:1.7;">
-          <li>
-            <span style="color:#254b97;font-weight:600;">NGP-DST Summer School on Geospatial Technologies</span> | IIT (ISM) Dhanbad &nbsp; <span style="color:#666;font-size:0.98em;">June 2024</span>
-          </li>
-          <li>
-            <span style="color:#254b97;font-weight:600;">Green Skill Development Programme (Level 5, NSQF)</span> | MoEFCC &nbsp; <span style="color:#666;font-size:0.98em;">April 2022</span>
-          </li>
-          <li>
-            <span style="color:#254b97;font-weight:600;">UGC NET Qualified</span> | Environmental Science &nbsp; <span style="color:#666;font-size:0.98em;">2022</span>
-          </li>
-        </ul>
-        <h2 style="color:#183153;font-size:1.25rem;margin-top:2.2em;margin-bottom:0.7em;">Skill Highlights</h2>
-        <div style="margin-bottom:2em;">
-          <h3 style="color:#254b97;font-size:1.13rem;margin-bottom:0.7em;"></h3>
-          <p style="font-size:1.13rem;line-height:1.7;margin-bottom:1.2em;">
-          <h3 style="color:#254b97;font-size:1.13rem;margin-bottom:0.7em;">Core Skills</h3>
-          <ul style="font-size:1.08rem;line-height:1.7;margin-bottom:1.2em;list-style-type:disc;padding-left:1.2em;">
-            <li><b>Programming & Data Science</b>
-              <ul style="margin-top:0.3em;">
-                <li><b>Languages:</b> R, Python</li>
-                <li><b>Statistical Computing:</b> Data analysis, machine learning, predictive modeling</li>
-                <li><b>Libraries/Frameworks:</b> Pandas, Numpy, Scikit-learn, ggplot2, Matplotlib, Plotly</li>
-              </ul>
-            </li>
-            <li><b>Geospatial & Remote Sensing</b>
-              <ul style="margin-top:0.3em;">
-                <li><b>GIS Software:</b> ArcGIS, QGIS</li>
-                <li><b>Remote Sensing:</b> Google Earth Engine, MODIS, ERA5-Land, MERRA-2</li>
-                <li><b>Spatial Analysis:</b> Map creation, spatial modeling, GIS analytics</li>
-              </ul>
-            </li>
-            <li><b>Climate Science Expertise</b>
-              <ul style="margin-top:0.3em;">
-                <li><b>Climate Modeling:</b> VIC model, CMIP6, Bayesian Networks, Bias Correction</li>
-                <li><b>Hydroclimatology:</b> Water resource assessment, drought/flood analysis</li>
-                <li><b>Big Data in Climate:</b> Processing and visualizing large climate datasets</li>
-              </ul>
-            </li>
-            <li><b>Visualization & Communication</b>
-              <ul style="margin-top:0.3em;">
-                <li><b>Data Visualization:</b> Advanced charting, interactive dashboards, web-based visual tools</li>
-                <li><b>Scientific Writing:</b> Preparation of research articles, reports, technical documentation</li>
-                <li><b>Outreach:</b> Development of web portals and digital resources for climate science dissemination</li>
-              </ul>
-            </li>
-          </ul>
-          <h3 style="color:#254b97;font-size:1.13rem;margin-bottom:0.7em;">Focus Areas</h3>
-          <ul style="font-size:1.08rem;line-height:1.7;list-style-type:disc;padding-left:1.2em;">
-            <li>Water security and hydroclimatology under climate change scenarios</li>
-            <li>Integration of AI and machine learning in environmental research</li>
-            <li>Development of open-access digital tools for scientific and public use</li>
-            <li>Policy-relevant modeling and data visualization for sustainable development</li>
-            <li>Collaborative research across environmental, data science, and policy domains</li>
-          </ul>
-          <p style="font-size:1.13rem;line-height:1.7;margin-top:1.5em;font-style:italic;color:#183153;">
-            I am committed to bridging advanced climate science with real-world applications through innovation in programming, geospatial analytics, and digital technology.
-          </p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Rahul Kumar</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- PUBLICATIONS SECTION -->
-  <section id="publications-section" class="main-section" style="display:none;">
-    <div style="max-width:900px;margin:2.5rem auto 0 auto;padding:0 1rem;">
-      <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#114674;margin-bottom:1.2rem;">Publications</h2>
-      <div style="background:#fff;padding:1.5rem 1.3rem 1.3rem 1.3rem;border-radius:14px;box-shadow:0 2px 14px #e5ebfa;">
-        <p>Coming soon...</p>
-      </div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Rahul Kumar</h1>
+                <p class="hero-subtitle">PhD Candidate in Environmental Science & Engineering</p>
+                <p class="hero-description">Specializing in Hydrology and Water Resource Science at IIT Dhanbad</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <button class="btn btn-secondary" onclick="window.print()">
+                        <i class="fas fa-download"></i> Download CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- MONITORING SECTION: Video + Card-based layout -->
-  <section id="monitoring-section" class="main-section" style="display:none;">
-    <div style="max-width:1100px;margin:0 auto;padding:2.5rem 1rem 0 1rem;">
-      <h1 style="font-family:'Playfair Display',serif;font-size:2rem;color:#114674;text-align:center;margin-bottom:0.7em;">Monitoring and Early Warning System<br><span style="font-size:1.1rem;font-weight:400;color:#b71c1c;">(Experimental)</span></h1>
-      <p style="text-align:center;font-size:1.13rem;color:#bc2222;margin-bottom:2.2rem;">The web portals are under development and will be published soon!</p>
-      <div style="margin-bottom:2.5rem;">
-        <!-- Leaflet Map Embed -->
-        <div id="map" style="cursor: crosshair; height: 60%; position: relative; display: block; outline-style: none;" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0"></div>
-      </div>
-    </div>
-  </section>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Doctor of Philosophy - Environmental Science & Engineering</h3>
+                        <h4>Indian Institute of Technology (ISM), Dhanbad</h4>
+                        <p class="timeline-period">Currently Pursuing</p>
+                        <p>Specialization: Hydrology and Water Resource Science</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>PG Diploma Remote Sensing & GIS</h3>
+                        <h4>Banaras Hindu University, Varanasi</h4>
+                        <p class="timeline-period">November 2022 - July 2023</p>
+                        <p class="grade">CGPA: 8.30</p>
+                    </div>
+                </div>
 
-  <!-- RESOURCES SECTION -->
-  <section id="resources-section" class="main-section" style="display:none;">
-    <div style="max-width:900px;margin:2.5rem auto 0 auto;padding:0 1rem;">
-      <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#114674;margin-bottom:1.2rem;">Resources</h2>
-      <div style="background:#fff;padding:1.5rem 1.3rem 1.3rem 1.3rem;border-radius:14px;box-shadow:0 2px 14px #e5ebfa;">
-        <p>Coming soon...</p>
-      </div>
-    </div>
-  </section>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>M.Sc. in Environmental Science</h3>
+                        <h4>Central University of Rajasthan, Ajmer</h4>
+                        <p class="timeline-period">June 2019 - July 2021</p>
+                        <p class="grade">Percentage: 75.34%</p>
+                    </div>
+                </div>
 
-  <!-- MEDIA SECTION -->
-  <section id="media-section" class="main-section" style="display:none;">
-    <div style="max-width:900px;margin:2.5rem auto 0 auto;padding:0 1rem;">
-      <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#114674;margin-bottom:1.2rem;">Media</h2>
-      <div style="background:#fff;padding:1.5rem 1.3rem 1.3rem 1.3rem;border-radius:14px;box-shadow:0 2px 14px #e5ebfa;">
-        <p>Coming soon...</p>
-      </div>
-    </div>
-  </section>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>B.Sc. in Environmental Science</h3>
+                        <h4>Central University of Rajasthan, Ajmer</h4>
+                        <p class="timeline-period">June 2016 - May 2019</p>
+                        <p class="grade">Percentage: 57.06%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    // SPA navigation: show only the selected section
-    const navBtns = document.querySelectorAll('.nav-btn');
-    const sections = document.querySelectorAll('.main-section');
-    navBtns.forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        navBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const target = btn.getAttribute('data-section');
-        sections.forEach(sec => {
-          if(sec.id === target) {
-            sec.style.display = '';
-          } else {
-            sec.style.display = 'none';
-          }
-        });
-      });
-    });
-  </script>
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Research Projects</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Master's Thesis</h3>
+                    <h4>Impact of Lockdown on Air Quality and Associated Health Issues</h4>
+                    <p>A comprehensive case study of Patna City, Bihar, analyzing the environmental and health impacts during COVID-19 lockdown periods.</p>
+                    <div class="research-tags">
+                        <span class="tag">Air Quality</span>
+                        <span class="tag">Health Impact</span>
+                        <span class="tag">COVID-19</span>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Minor Research Project</h3>
+                    <h4>Pesticide Usage and its Impact on Farmers</h4>
+                    <p>A detailed case study of Mundoti Village (Ajmer), Rajasthan, examining the effects of pesticide usage on farming communities.</p>
+                    <div class="research-tags">
+                        <span class="tag">Agriculture</span>
+                        <span class="tag">Pesticides</span>
+                        <span class="tag">Rural Impact</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-interests">
+                <h3>Research Interests</h3>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <i class="fas fa-satellite"></i>
+                        <span>Remote Sensing & Data Processing</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-water"></i>
+                        <span>Surface Water Analysis (Physical, Chemical, Biological)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>GIS & Remote Sensing</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-map"></i>
+                            <span>ArcGIS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-globe"></i>
+                            <span>QGIS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-satellite-dish"></i>
+                            <span>ERDAS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-eye"></i>
+                            <span>ENVI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programming & Analysis</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-r-project"></i>
+                            <span>R Language</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-earth-americas"></i>
+                            <span>Google Earth Engine</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Office & Documentation</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>MS-Office Suite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="personal-strengths">
+                <h3>Personal Strengths</h3>
+                <div class="strengths-grid">
+                    <div class="strength-item">
+                        <i class="fas fa-users"></i>
+                        <span>Collaborative Learning</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Quick Learner</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-comments"></i>
+                        <span>Communication Skills</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Tool Adaptability</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-user-friends"></i>
+                        <span>Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>UGC-NET Lectureship Qualified</h3>
+                    <p class="achievement-year">2022</p>
+                    <p>Qualified for University Grants Commission National Eligibility Test for Lectureship in Environmental Science.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Green Skill Development Certificate</h3>
+                    <p class="achievement-year">April - May 2022</p>
+                    <p>Completed certificate course in "Greenbelt development for industries" focusing on sustainable industrial practices.</p>
+                </div>
+            </div>
+
+            <div class="extracurricular">
+                <h3>Extra-curricular Activities</h3>
+                <div class="activities-grid">
+                    <div class="activity-item">
+                        <i class="fas fa-running"></i>
+                        <div>
+                            <h4>Sports</h4>
+                            <p>Cricket, Badminton</p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-theater-masks"></i>
+                        <div>
+                            <h4>Cultural Activities</h4>
+                            <p>University-level Nukkad Natak (Street Play)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Address</h3>
+                        <p>Dharamarai Chak, Lakhisarai<br>Pin code - 811311<br>Bihar, India</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Phone</h3>
+                        <p>+91 9636525194</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>Rahul.evs01@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Rahul Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
