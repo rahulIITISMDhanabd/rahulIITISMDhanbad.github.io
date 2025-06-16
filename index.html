@@ -1,109 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Climate Clock Style Ticker</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Digital LED font (Orbitron) -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-  <style>
-    .climate-ticker-container {
-      width: 100vw;
-      background: #222;
-      border-top: 4px solid #356d37;
-      border-bottom: 4px solid #356d37;
-      color: #fff;
-      font-family: 'Orbitron', 'monospace';
-      padding: 0;
-      margin: 0;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      box-sizing: border-box;
-    }
-    .climate-ticker-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.3rem 2vw;
-      font-size: 1.1rem;
-      letter-spacing: 2px;
-      border-bottom: 1px solid #111;
-    }
-    .climate-ticker-header {
-      background: #333;
-      font-size: 1.07rem;
-      color: #fff;
-      font-family: 'Orbitron', 'monospace';
-      font-weight: bold;
-      border-bottom: 2px solid #222;
-      text-transform: uppercase;
-    }
-    .climate-ticker-numbers {
-      background: #111;
-      color: #f33;
-      font-size: 1.8rem;
-      font-weight: bold;
-      font-family: 'Orbitron', 'monospace';
-      letter-spacing: 3px;
-      border-bottom: 2px solid #333;
-      min-height: 2.4em;
-    }
-    .climate-ticker-green {
-      background: #111;
-      color: #c6f55e;
-      font-size: 1.2rem;
-      white-space: nowrap;
-      overflow: hidden;
-      position: relative;
-      min-height: 2em;
-    }
-    /* Ticker animation */
-    .climate-ticker-scroll {
-      display: inline-block;
-      padding-left: 100vw;
-      animation: tickerMove 35s linear infinite;
-    }
-    @keyframes tickerMove {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-    /* Responsive */
-    @media (max-width: 800px) {
-      .climate-ticker-row { font-size: 0.9rem; }
-      .climate-ticker-numbers { font-size: 1.2rem; }
-      .climate-ticker-green { font-size: 1.0rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Kumar - Environmental Science Professional</title>
+    <meta name="description" content="Portfolio of Rahul Kumar, PhD candidate in Environmental Science & Engineering at IIT Dhanbad, specializing in Hydrology and Water Resource Science">
+    <meta name="keywords" content="Environmental Science, Hydrology, Water Resources, Remote Sensing, GIS, PhD, Research">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"> <!-- LED style font -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .climate-ticker-container {
+        width: 100vw;
+        background: #222;
+        border-top: 4px solid #356d37;
+        border-bottom: 4px solid #356d37;
+        color: #fff;
+        font-family: 'Orbitron', 'monospace';
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        box-sizing: border-box;
+      }
+      .climate-ticker-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.3rem 2vw;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #111;
+      }
+      .climate-ticker-header {
+        background: #333;
+        font-size: 1.07rem;
+        color: #fff;
+        font-family: 'Orbitron', 'monospace';
+        font-weight: bold;
+        border-bottom: 2px solid #222;
+        text-transform: uppercase;
+      }
+      .climate-ticker-numbers {
+        background: #111;
+        color: #f33;
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family: 'Orbitron', 'monospace';
+        letter-spacing: 3px;
+        border-bottom: 2px solid #333;
+        min-height: 2.4em;
+      }
+      .climate-ticker-green {
+        background: #111;
+        color: #c6f55e;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        min-height: 2em;
+      }
+      .climate-ticker-scroll {
+        display: inline-block;
+        padding-left: 100vw;
+        animation: tickerMove 35s linear infinite;
+      }
+      @keyframes tickerMove {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+      }
+      @media (max-width: 800px) {
+        .climate-ticker-row { font-size: 0.9rem; }
+        .climate-ticker-numbers { font-size: 1.2rem; }
+        .climate-ticker-green { font-size: 1.0rem; }
+      }
+    </style>
 </head>
 <body>
-  <!-- Your page content ... -->
+    <!-- ...Your content above (navigation, sections, etc.)... -->
 
-  <!-- Climate Clock Digital Ticker (bottom, just above footer) -->
-  <div class="climate-ticker-container">
-    <div class="climate-ticker-row climate-ticker-header">
-      <div>CLIMATECLOCK.WORLD</div>
-      <div>CARBON BUDGET REMAINING</div>
-      <div>TIME TO ACT</div>
+    <!-- Place this before your footer, at the very bottom: -->
+    <div class="climate-ticker-container">
+      <div class="climate-ticker-row climate-ticker-header">
+        <div>CLIMATECLOCK.WORLD</div>
+        <div>CARBON BUDGET REMAINING</div>
+        <div>TIME TO ACT</div>
+      </div>
+      <div class="climate-ticker-row climate-ticker-numbers">
+        <div>DEADLINE</div>
+        <div>106,80,15,54,816 TONS</div>
+        <div>2 YEARS 198 DAYS 19:00:37</div>
+      </div>
+      <div class="climate-ticker-row climate-ticker-green">
+        <span class="climate-ticker-scroll">
+          LIFELINE &nbsp; | &nbsp; BREAKING: DENMARK TO CUT EMISSIONS 70% BY 2030 &nbsp; | &nbsp; COST OF SOLAR HAS DROPPED DRAMATICALLY &nbsp; | &nbsp; JOIN THE MOVEMENT AT CLIMATECLOCK.WORLD &nbsp;
+        </span>
+      </div>
     </div>
-    <div class="climate-ticker-row climate-ticker-numbers">
-      <div>DEADLINE</div>
-      <div>106,80,15,54,816 TONS</div>
-      <div>2 YEARS 198 DAYS 19:00:37</div>
-    </div>
-    <div class="climate-ticker-row climate-ticker-green">
-      <span class="climate-ticker-scroll">
-        LIFELINE &nbsp; | &nbsp; BREAKING: DENMARK TO CUT EMISSIONS 70% BY 2030 &nbsp; | &nbsp; COST OF SOLAR H...
-      </span>
-    </div>
-  </div>
 
-  <!-- Your footer -->
-  <footer style="background:#222; color:#eee; text-align:center; padding:1.2rem 0;">
-    &copy; 2024 Rahul Kumar. All rights reserved.
-  </footer>
+    <!-- Footer -->
+    <footer style="background:#222; color:#eee; text-align:center; padding:1.2rem 0;">
+      &copy; 2024 Rahul Kumar. All rights reserved.
+    </footer>
 </body>
 </html>
