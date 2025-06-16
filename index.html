@@ -1,363 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Kumar - Environmental Science Professional</title>
-    <meta name="description" content="Portfolio of Rahul Kumar, PhD candidate in Environmental Science & Engineering at IIT Dhanbad, specializing in Hydrology and Water Resource Science">
-    <meta name="keywords" content="Environmental Science, Hydrology, Water Resources, Remote Sensing, GIS, PhD, Research">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul Kumar - Environmental Science Professional</title>
+  <meta name="description" content="Portfolio of Rahul Kumar, PhD candidate in Environmental Science & Engineering at IIT Dhanbad, specializing in Hydrology and Water Resource Science">
+  <meta name="keywords" content="Environmental Science, Hydrology, Water Resources, Remote Sensing, GIS, PhD, Research">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Rahul Kumar</h2>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#research" class="nav-link">Research</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#achievements" class="nav-link">Achievements</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><h2>Rahul Kumar</h2></div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div style="margin-bottom: 2rem; display: flex; flex-direction: column; align-items: center;">
+        <img src="nasa.jpg" alt="NASA Banner" style="display: block; width: 100vw; max-width:1200px; object-fit: cover; border-radius: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.10); margin-bottom: 1rem;">
+        <blockquote style="font-size: 1.1rem; font-style: italic; color: #234; background: url('GOES.jpg') center/cover no-repeat, #f5f7fa; border-left: 4px solid #2a4d69; padding: 1rem 2rem; border-radius: 0.5rem; max-width: 700px; text-align: center; background-blend-mode: lighten; background-color: #f5f7fa; margin: 0 auto;">
+          "The climate is not just a topic, it is the very basis of our existence. To care for the climate is to care for life itself."<br>
+          <span style="font-size: 0.95rem; color: #567;">— Acharya Prashant</span>
+        </blockquote>
+      </div>
+      <div class="hero-content">
+        <img src="profile.jpg" alt="Rahul Kumar">
+        <h1 class="hero-title">Rahul Kumar</h1>
+        <p class="hero-subtitle">PhD Candidate in Environmental Science & Engineering</p>
+        <p class="hero-description">Specializing in Hydrology and Water Resource Science at IIT Dhanbad</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <button class="btn btn-secondary" onclick="window.print()">
+            <i class="fas fa-download"></i> Download CV
+          </button>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <!-- Banner at top with Acharya Prashant climate quote -->
-            <div style="margin-bottom: 2rem; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; display: flex; flex-direction: column; align-items: center;">
-                <img src="nasa.jpg" alt="NASA Banner" style="display: block; width: 100vw; min-width: 100vw; max-width: 100vw; height: 00px; object-fit: cover; border-radius: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.10); margin-bottom: 1rem;">
-                <blockquote style="font-size: 1.1rem; font-style: italic; color: #234; background: url('GOES.jpg') center/cover no-repeat, #f5f7fa; border-left: 4px solid #2a4d69; padding: 1rem 2rem; border-radius: 0.5rem; max-width: 700px; text-align: center; background-blend-mode: lighten; background-color: #f5f7fa; margin: 0 auto;">
-                    "The climate is not just a topic, it is the very basis of our existence. To care for the climate is to care for life itself."<br>
-                    <span style="font-size: 0.95rem; color: #567;">— Acharya Prashant</span>
-                </blockquote>
-            </div>
-            <div class="hero-content">
-                <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
-                    <img src="profile.jpg" alt="Rahul Kumar" style="width: 260px; height: 260px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 4px solid #fff; margin-bottom: 1rem;">
-                    <h1 class="hero-title">Rahul Kumar</h1>
-                    <p class="hero-subtitle">PhD Candidate in Environmental Science & Engineering</p>
-                    <p class="hero-description">Specializing in Hydrology and Water Resource Science at IIT Dhanbad</p>
-                </div>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <button class="btn btn-secondary" onclick="window.print()">
-                        <i class="fas fa-download"></i> Download CV
-                    </button>
-                </div>
-            </div>
-            <!-- Banner with NASA image and logos -->
-            <div style="margin-top: 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
-                <div style="display: flex; gap: 2rem; justify-content: center; align-items: center; flex-wrap: wrap;">
-                    <img src="IIT-ISM.png" alt="IIT ISM Dhanbad" style="height: 48px;">
-                    <img src="curaj.jpg" alt="Central University of Rajasthan" style="height: 48px;">
-                    <img src="bhu.jpg" alt="Banaras Hindu University" style="height: 48px;">
-                </div>
-            </div>
-            <!-- Home bottom: Contact and Google IIT ISM Dhanbad Environmental Science Department -->
-            <div style="margin-top: 2.5rem; text-align: center;">
-                <h3>Contact & Useful Links</h3>
-                <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-                    <a href="#contact" class="btn btn-primary" style="width: fit-content;">Contact Me</a>
-                    <a href="https://www.iitism.ac.in/" target="_blank" rel="noopener" class="btn btn-secondary" style="width: fit-content;">
-                        <i class="fas fa-university"></i> IIT (ISM) Dhanbad
-                    </a>
-                    <a href="https://www.iitism.ac.in/index.php/Departments/details/21" target="_blank" rel="noopener" class="btn btn-secondary" style="width: fit-content;">
-                        <i class="fas fa-leaf"></i> Environmental Science Department
-                    </a>
-                    <a href="https://www.google.com/maps/place/IIT+(ISM)+Dhanbad/" target="_blank" rel="noopener" class="btn btn-secondary" style="width: fit-content;">
-                        <i class="fas fa-map-marker-alt"></i> Google Map: IIT (ISM) Dhanbad
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content" style="display: flex; align-items: center; gap: 1rem;">
-                        <img src="IIT-ISM.png" alt="IIT ISM Dhanbad" style="height: 40px;">
-                        <div>
-                            <h3>Doctor of Philosophy - Environmental Science & Engineering</h3>
-                            <h4>Indian Institute of Technology (ISM), Dhanbad</h4>
-                            <p class="timeline-period">Currently Pursuing</p>
-                            <p>Specialization: Hydrology and Water Resource Science</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content" style="display: flex; align-items: center; gap: 1rem;">
-                        <img src="bhu.jpg" alt="Banaras Hindu University" style="height: 40px;">
-                        <div>
-                            <h3>PG Diploma Remote Sensing & GIS</h3>
-                            <h4>Banaras Hindu University, Varanasi</h4>
-                            <p class="timeline-period">November 2022 - July 2023</p>
-                            <p><strong>Project:</strong> Land Use/Land Cover Change Detection using Remote Sensing and GIS Techniques in Varanasi District</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content" style="display: flex; align-items: center; gap: 1rem;">
-                        <img src="curaj.jpg" alt="Central University of Rajasthan" style="height: 40px;">
-                        <div>
-                            <h3>Integrated M.Sc. in Environmental Science</h3>
-                            <h4>Central University of Rajasthan, Ajmer</h4>
-                            <p class="timeline-period">June 2016 - July 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research" class="research">
-        <div class="container">
-            <h2 class="section-title">Research Projects</h2>
-            <div class="research-grid">
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3>Master's Thesis</h3>
-                    <h4>Impact of Lockdown on Air Quality and Associated Health Issues</h4>
-                    <p>A comprehensive case study of Patna City, Bihar, analyzing the environmental and health impacts during COVID-19 lockdown periods.</p>
-                    <div class="research-tags">
-                        <span class="tag">Air Quality</span>
-                        <span class="tag">Health Impact</span>
-                        <span class="tag">COVID-19</span>
-                    </div>
-                </div>
-
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Minor Research Project</h3>
-                    <h4>Pesticide Usage and its Impact on Farmers</h4>
-                    <p>A detailed case study of Mundoti Village (Ajmer), Rajasthan, examining the effects of pesticide usage on farming communities.</p>
-                    <div class="research-tags">
-                        <span class="tag">Agriculture</span>
-                        <span class="tag">Pesticides</span>
-                        <span class="tag">Rural Impact</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="research-interests">
-                <h3>Research Interests</h3>
-                <div class="interests-grid">
-                    <div class="interest-item">
-                        <i class="fas fa-satellite"></i>
-                        <span>Remote Sensing & Data Processing</span>
-                    </div>
-                    <div class="interest-item">
-                        <i class="fas fa-water"></i>
-                        <span>Surface Water Analysis (Physical, Chemical, Biological)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>GIS & Remote Sensing</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-map"></i>
-                            <span>ArcGIS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-globe"></i>
-                            <span>QGIS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Programming & Analysis</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-r-project"></i>
-                            <span>R Language</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-earth-americas"></i>
-                            <span>Google Earth Engine</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Office & Documentation</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-file-alt"></i>
-                            <span>MS-Office Suite</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="personal-strengths">
-                <h3>Personal Strengths</h3>
-                <div class="strengths-grid">
-                    <div class="strength-item">
-                        <i class="fas fa-users"></i>
-                        <span>Collaborative Learning</span>
-                    </div>
-                    <div class="strength-item">
-                        <i class="fas fa-bolt"></i>
-                        <span>Quick Learner</span>
-                    </div>
-                    <div class="strength-item">
-                        <i class="fas fa-comments"></i>
-                        <span>Communication Skills</span>
-                    </div>
-                    <div class="strength-item">
-                        <i class="fas fa-tools"></i>
-                        <span>Tool Adaptability</span>
-                    </div>
-                    <div class="strength-item">
-                        <i class="fas fa-user-friends"></i>
-                        <span>Team Collaboration</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements & Certifications</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>UGC-NET Lectureship Qualified</h3>
-                    <p class="achievement-year">2022</p>
-                    <p>Qualified for University Grants Commission National Eligibility Test for Lectureship in Environmental Science.</p>
-                </div>
-
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Green Skill Development Certificate</h3>
-                    <p class="achievement-year">April - May 2022</p>
-                    <p>Completed certificate course in "Greenbelt development for industries" focusing on sustainable industrial practices.</p>
-                </div>
-            </div>
-
-            <div class="extracurricular">
-                <h3>Extra-curricular Activities</h3>
-                <div class="activities-grid">
-                    <div class="activity-item">
-                        <i class="fas fa-running"></i>
-                        <div>
-                            <h4>Sports</h4>
-                            <p>Cricket, Badminton</p>
-                        </div>
-                    </div>
-                    <div class="activity-item">
-                        <i class="fas fa-theater-masks"></i>
-                        <div>
-                            <h4>Cultural Activities</h4>
-                            <p>University-level Nukkad Natak (Street Play)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Information</h2>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-info">
-                        <h3>Address</h3>
-                        <p>Dharamarai Chak, Lakhisarai<br>Pin code - 811311<br>Bihar, India</p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-info">
-                        <h3>Phone</h3>
-                        <p>+91 9636525194</p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-info">
-                        <h3>Email</h3>
-                        <p>Rahul.evs01@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Rahul Kumar. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </section>
+  <!-- ...Add your other sections here... -->
+  <!-- CLIMATE TICKER BOTTOM -->
+  <div class="climate-ticker-container">
+    <div class="climate-ticker-row climate-ticker-header">
+      <div>CLIMATECLOCK.WORLD</div>
+      <div>CARBON BUDGET REMAINING</div>
+      <div>TIME TO ACT</div>
+    </div>
+    <div class="climate-ticker-row climate-ticker-numbers">
+      <div>DEADLINE</div>
+      <div>106,80,15,54,816 TONS</div>
+      <div>2 YEARS 198 DAYS 19:00:37</div>
+    </div>
+    <div class="climate-ticker-row climate-ticker-green">
+      <span class="climate-ticker-scroll">
+        LIFELINE &nbsp; | &nbsp; BREAKING: DENMARK TO CUT EMISSIONS 70% BY 2030 &nbsp; | &nbsp; COST OF SOLAR HAS DROPPED DRAMATICALLY &nbsp; | &nbsp; JOIN THE MOVEMENT AT CLIMATECLOCK.WORLD &nbsp;
+      </span>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2024 Rahul Kumar. All rights reserved.
+  </footer>
 </body>
-</html> To add the Climate Clock widget to your site, all you have to do is add the following HTML:
-
-<script src="https://climateclock.world/widget-v2.js" async></script>
-<climate-clock />
+</html>
